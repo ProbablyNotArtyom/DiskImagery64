@@ -1,0 +1,4926 @@
+SplineFontDB: 1.0
+FontName: CBMShift
+FullName: CBMShift
+FamilyName: CBMShift
+Weight: Medium
+Copyright: Created by Christian Vogelgsang with FontForge 1.0 (http://fontforge.sf.net)
+Comments: 2007-1-1: Created.
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: 0
+UnderlineWidth: 204.8
+Ascent: 1638
+Descent: 410
+NeedsXUIDChange: 1
+XUID: [1021 5 1719676404 6423963]
+FSType: 0
+OS2Version: 0
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1167670773
+ModificationTime: 1167671694
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 184
+OS2WinAscent: 0
+OS2WinAOffset: 1
+OS2WinDescent: 0
+OS2WinDOffset: 1
+HheadAscent: 0
+HheadAOffset: 1
+HheadDescent: 0
+HheadDOffset: 1
+ScriptLang: 1
+ 1 latn 1 dflt 
+TtfTable: cvt  4
+!(6u&
+EndTtf
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: Adobe Glyph List
+DisplaySize: -24
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 64 32 8
+BeginChars: 65536 192
+StartChar: space
+Encoding: 32 32 0
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+EndChar
+StartChar: exclam
+Encoding: 33 33 1
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 2047 m 1
+ 1024 2047 l 1
+ 1024 767 l 1
+ 512 767 l 1
+ 512 2047 l 1
+513 512 m 1
+ 1025 512 l 1
+ 1025 256 l 1
+ 513 256 l 1
+ 513 512 l 1
+EndSplineSet
+EndChar
+StartChar: quotedbl
+Encoding: 34 34 2
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1280 2048 m 1
+ 1792 2048 l 1
+ 1792 1536 l 1
+ 1280 1536 l 1
+ 1280 2048 l 1
+256 2048 m 1
+ 768 2048 l 1
+ 768 1536 l 1
+ 256 1536 l 1
+ 256 2048 l 1
+EndSplineSet
+EndChar
+StartChar: numbersign
+Encoding: 35 35 3
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1024 m 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+ 256 1536 l 1
+ 256 2048 l 1
+ 768 2048 l 1
+ 768 1536 l 1
+ 1280 1536 l 1
+ 1280 2048 l 1
+ 1792 2048 l 1
+ 1792 1536 l 1
+ 2048 1536 l 1
+ 2048 1280 l 1
+ 1792 1280 l 1
+ 1792 1024 l 1
+ 2048 1024 l 1
+ 2048 768 l 1
+ 1792 768 l 1
+ 1792 256 l 1
+ 1280 256 l 1
+ 1280 768 l 1
+ 768 768 l 1
+ 768 256 l 1
+ 256 256 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1024 l 1
+768 1280 m 1
+ 768 1024 l 1
+ 1280 1024 l 1
+ 1280 1280 l 1
+ 768 1280 l 1
+EndSplineSet
+EndChar
+StartChar: dollar
+Encoding: 36 36 4
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 1024 768 l 1
+ 1024 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 512 1792 l 1
+ 512 2048 l 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 512 1536 l 1
+ 512 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 507 l 1
+ 0 507 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: percent
+Encoding: 37 37 5
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 772 m 1
+ 256 772 l 1
+ 256 1028 l 1
+ 512 1028 l 1
+ 512 1284 l 1
+ 768 1284 l 1
+ 768 1540 l 1
+ 1024 1540 l 1
+ 1024 1796 l 1
+ 1280 1796 l 1
+ 1280 2052 l 1
+ 1536 2052 l 1
+ 1536 1540 l 1
+ 1280 1540 l 1
+ 1280 1284 l 1
+ 1024 1284 l 1
+ 1024 1028 l 1
+ 768 1028 l 1
+ 768 772 l 1
+ 512 772 l 1
+ 512 516 l 1
+ 256 516 l 1
+ 256 260 l 1
+ 0 256 l 1
+ 0 772 l 1
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+1024 768 m 1
+ 1536 768 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+EndSplineSet
+EndChar
+StartChar: ampersand
+Encoding: 38 38 6
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1024 m 1
+ 256 1024 l 1
+ 256 1536 l 1
+ 0 1536 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 1792 1024 l 1
+ 1792 768 l 1
+ 1536 768 l 1
+ 1536 512 l 1
+ 1792 512 l 1
+ 1792 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+1024 1792 m 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: quotesingle
+Encoding: 39 39 7
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1792 2048 m 1
+ 1792 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 768 1280 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 1792 2048 l 1
+EndSplineSet
+EndChar
+StartChar: parenleft
+Encoding: 40 40 8
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1536 m 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 768 2048 l 1
+ 768 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 256 1536 l 1
+ 256 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 768 512 l 1
+ 768 256 l 1
+ 1280 256 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 1536 l 1
+EndSplineSet
+EndChar
+StartChar: parenright
+Encoding: 41 41 9
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1536 m 1
+ 512 1536 l 1
+ 512 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 768 2048 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 1536 l 1
+ 1280 1536 l 1
+ 1280 768 l 1
+ 1024 768 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 512 512 l 1
+ 512 768 l 1
+ 768 768 l 1
+ 768 1536 l 1
+EndSplineSet
+EndChar
+StartChar: asterisk
+Encoding: 42 42 10
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1280 1536 l 1
+ 1280 1792 l 1
+ 1792 1792 l 1
+ 1792 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 2048 1280 l 1
+ 2048 1024 l 1
+ 1536 1024 l 1
+ 1536 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 259 512 l 1
+ 259 768 l 1
+ 512 768 l 1
+ 512 1024 l 1
+ 0 1024 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: plus
+Encoding: 43 43 11
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 1280 m 1
+ 768 1280 l 1
+ 768 1792 l 1
+ 1280 1792 l 1
+ 1280 1280 l 1
+ 1792 1280 l 1
+ 1792 1024 l 1
+ 1280 1024 l 1
+ 1280 512 l 1
+ 768 512 l 1
+ 768 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+EndSplineSet
+EndChar
+StartChar: comma
+Encoding: 44 44 12
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 768 m 1
+ 768 768 l 1
+ 768 256 l 1
+ 512 256 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 256 l 1
+ 256 256 l 1
+ 256 768 l 1
+EndSplineSet
+EndChar
+StartChar: hyphen
+Encoding: 45 45 13
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 1280 m 1
+ 1792 1280 l 1
+ 1792 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+EndSplineSet
+EndChar
+StartChar: period
+Encoding: 46 46 14
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 768 m 1
+ 1280 768 l 1
+ 1280 256 l 1
+ 768 256 l 1
+ 768 768 l 1
+EndSplineSet
+EndChar
+StartChar: slash
+Encoding: 47 47 15
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 511 m 1
+ 512 511 l 1
+ 512 767 l 1
+ 768 767 l 1
+ 768 1023 l 1
+ 1024 1023 l 1
+ 1024 1279 l 1
+ 1280 1279 l 1
+ 1280 1535 l 1
+ 1536 1535 l 1
+ 1536 1791 l 1
+ 2048 1791 l 1
+ 2048 1535 l 1
+ 1792 1535 l 1
+ 1792 1279 l 1
+ 1536 1279 l 1
+ 1536 1023 l 1
+ 1280 1023 l 1
+ 1280 767 l 1
+ 1024 767 l 1
+ 1024 511 l 1
+ 768 511 l 1
+ 768 255 l 1
+ 256 255 l 1
+ 256 511 l 1
+EndSplineSet
+EndChar
+StartChar: zero
+Encoding: 48 48 16
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: one
+Encoding: 49 49 17
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 512 1536 l 1
+ 512 2048 l 1
+ 1024 2048 l 1
+ 1024 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 252 l 1
+ 0 512 l 1
+ 512 512 l 1
+ 512 1280 l 1
+EndSplineSet
+EndChar
+StartChar: two
+Encoding: 50 50 18
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1280 2048 m 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+768 1024 m 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 768 l 1
+ 256 768 l 1
+ 256 1024 l 1
+ 768 1024 l 1
+EndSplineSet
+EndChar
+StartChar: three
+Encoding: 51 51 19
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 512 768 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: four
+Encoding: 52 52 20
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1024 l 1
+ 1792 1024 l 1
+ 1792 768 l 1
+ 1536 768 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+512 1024 m 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: five
+Encoding: 53 53 21
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 512 768 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1280 l 1
+ 0 1280 l 1
+ 0 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: six
+Encoding: 54 54 22
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: seven
+Encoding: 55 55 23
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1280 l 1
+ 768 1280 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: eight
+Encoding: 56 56 24
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1024 m 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: nine
+Encoding: 57 57 25
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 512 768 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: colon
+Encoding: 58 58 26
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1549 m 1
+ 1024 1549 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+ 512 1549 l 1
+512 768 m 1
+ 1024 768 l 1
+ 1024 509 l 1
+ 512 509 l 1
+ 512 768 l 1
+EndSplineSet
+EndChar
+StartChar: semicolon
+Encoding: 59 59 27
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 0 m 1
+ 256 256 l 1
+ 512 256 l 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 256 l 1
+ 768 256 l 1
+ 768 0 l 1
+ 256 0 l 1
+512 1542 m 1
+ 1024 1542 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+ 512 1542 l 1
+EndSplineSet
+EndChar
+StartChar: less
+Encoding: 60 60 28
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 2048 m 1
+ 1536 1792 l 1
+ 1024 1792 l 1
+ 1024 1536 l 1
+ 768 1536 l 1
+ 768 1280 l 1
+ 512 1280 l 1
+ 512 1024 l 1
+ 768 1024 l 1
+ 768 768 l 1
+ 1024 768 l 1
+ 1024 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 768 256 l 1
+ 768 512 l 1
+ 512 512 l 1
+ 512 768 l 1
+ 256 768 l 1
+ 256 1024 l 1
+ 0 1024 l 1
+ 0 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 512 1536 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 2048 l 1
+ 1536 2048 l 1
+EndSplineSet
+EndChar
+StartChar: equal
+Encoding: 61 61 29
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+0 1024 m 1
+ 1536 1024 l 1
+ 1536 768 l 1
+ 0 768 l 1
+ 0 1024 l 1
+EndSplineSet
+EndChar
+StartChar: greater
+Encoding: 62 62 30
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 0 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 256 l 1
+ 768 256 l 1
+ 768 512 l 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 768 1792 l 1
+ 768 2048 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: question
+Encoding: 63 63 31
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 512 768 l 1
+ 512 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 1792 l 1
+512 512 m 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+EndSplineSet
+EndChar
+StartChar: at
+Encoding: 64 64 32
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1024 l 1
+ 768 1024 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+1280 512 m 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+EndSplineSet
+EndChar
+StartChar: A
+Encoding: 65 65 33
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 256 768 l 1
+ 256 1024 l 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+512 768 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 512 768 l 1
+EndSplineSet
+EndChar
+StartChar: B
+Encoding: 66 66 34
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 0 256 l 1
+ 0 1792 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: C
+Encoding: 67 67 35
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 512 1280 l 1
+ 512 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: D
+Encoding: 68 68 36
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 1792 m 1
+ 1024 1792 l 1
+ 1024 1280 l 1
+ 256 1280 l 1
+ 256 1024 l 1
+ 0 1024 l 1
+ 0 512 l 1
+ 256 512 l 1
+ 256 256 l 1
+ 1536 256 l 1
+ 1536 1792 l 1
+1024 1024 m 1
+ 1024 512 l 1
+ 512 512 l 1
+ 512 1024 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: E
+Encoding: 69 69 37
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1280 l 1
+512 1280 m 1
+ 512 1024 l 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+EndSplineSet
+EndChar
+StartChar: F
+Encoding: 70 70 38
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1792 m 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 1536 1280 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+EndSplineSet
+EndChar
+StartChar: G
+Encoding: 71 71 39
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1536 1536 l 1
+ 1536 256 l 1
+ 1280 256 l 1
+ 1280 0 l 1
+ 0 0 l 1
+ 0 256 l 1
+512 1280 m 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+EndSplineSet
+EndChar
+StartChar: H
+Encoding: 72 72 40
+Width: 2048
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1788 m 1
+ 512 1788 l 1
+ 513 1280 l 1
+ 1281 1280 l 1
+ 1281 1024 l 1
+ 1536 1024 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1025 1024 l 1
+ 513 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1788 l 1
+EndSplineSet
+EndChar
+StartChar: I
+Encoding: 73 73 41
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1024 m 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 1024 1280 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 512 512 l 1
+ 512 1024 l 1
+512 1792 m 1
+ 1024 1792 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: J
+Encoding: 74 74 42
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1792 m 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+768 1280 m 1
+ 1280 1280 l 1
+ 1280 256 l 1
+ 1024 256 l 1
+ 1024 0 l 1
+ 256 0 l 1
+ 256 256 l 1
+ 768 256 l 1
+ 768 1280 l 1
+EndSplineSet
+EndChar
+StartChar: K
+Encoding: 75 75 43
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 512 1792 l 1
+ 512 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: L
+Encoding: 76 76 44
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+769 1536 m 1
+ 512 1536 l 1
+ 513 1792 l 1
+ 1280 1792 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 768 512 l 1
+ 769 1536 l 1
+EndSplineSet
+EndChar
+StartChar: M
+Encoding: 77 77 45
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 512 1536 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1792 1280 l 1
+ 1792 256 l 1
+ 1280 256 l 1
+ 1280 768 l 1
+ 1024 768 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: N
+Encoding: 78 78 46
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: O
+Encoding: 79 79 47
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1280 l 1
+512 1280 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+EndSplineSet
+EndChar
+StartChar: P
+Encoding: 80 80 48
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 512 512 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 1536 l 1
+512 1280 m 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+EndSplineSet
+EndChar
+StartChar: Q
+Encoding: 81 81 49
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 1536 m 1
+ 256 1536 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 768 l 1
+ 256 768 l 1
+ 256 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 1536 0 l 1
+ 1536 1536 l 1
+1024 1280 m 1
+ 1024 768 l 1
+ 512 768 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+EndSplineSet
+EndChar
+StartChar: R
+Encoding: 82 82 50
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 512 1280 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: S
+Encoding: 83 83 51
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 256 768 l 1
+ 256 1024 l 1
+ 0 1024 l 1
+ 0 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 512 1280 l 1
+ 512 1024 l 1
+ 1280 1024 l 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 0 256 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: T
+Encoding: 84 84 52
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 512 1536 l 1
+ 512 1792 l 1
+ 1024 1792 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1024 1280 l 1
+ 1024 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 768 256 l 1
+ 768 512 l 1
+ 512 512 l 1
+ 512 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: U
+Encoding: 85 85 53
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 512 1536 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: V
+Encoding: 86 86 54
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 512 1536 l 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: W
+Encoding: 87 87 55
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 512 1536 l 1
+ 512 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 1280 1024 l 1
+ 1280 1536 l 1
+ 1792 1536 l 1
+ 1792 768 l 1
+ 1536 768 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 256 l 1
+ 256 256 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: X
+Encoding: 88 88 56
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 256 512 l 1
+ 256 768 l 1
+ 512 768 l 1
+ 512 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+ 512 1536 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 512 512 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: Y
+Encoding: 89 89 57
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 768 256 l 1
+ 768 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1536 l 1
+ 512 1536 l 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 1536 l 1
+ 1536 1536 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 1024 256 l 1
+ 1024 0 l 1
+ 0 0 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: Z
+Encoding: 90 90 58
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 256 512 l 1
+ 256 768 l 1
+ 512 768 l 1
+ 512 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 0 1280 l 1
+ 0 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: bracketleft
+Encoding: 91 91 59
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: backslash
+Encoding: 92 92 60
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 256 512 l 1
+ 256 768 l 1
+ 512 768 l 1
+ 512 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1792 1792 l 1
+ 1792 1536 l 1
+ 1536 1536 l 1
+ 1536 1792 l 1
+ 1024 1792 l 1
+ 1024 1280 l 1
+ 1536 1280 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 1536 512 l 1
+ 1536 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: bracketright
+Encoding: 93 93 61
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 2048 m 1
+ 0 2048 l 1
+ 0 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 256 l 1
+ 1024 256 l 1
+ 1024 2048 l 1
+EndSplineSet
+EndChar
+StartChar: asciicircum
+Encoding: 94 94 62
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 512 1536 l 1
+ 512 1792 l 1
+ 1024 1792 l 1
+ 1024 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1536 1280 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 1024 l 1
+ 0 1024 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: underscore
+Encoding: 95 95 63
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 512 1536 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 1280 l 1
+ 1797 1280 l 1
+ 1797 768 l 1
+ 768 768 l 1
+ 768 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: uni00A0
+Encoding: 160 160 64
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+EndChar
+StartChar: exclamdown
+Encoding: 161 161 65
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: cent
+Encoding: 162 162 66
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 0 m 1
+ 0 1024 l 1
+ 2048 1024 l 1
+ 2048 0 l 1
+ 0 0 l 1
+EndSplineSet
+EndChar
+StartChar: sterling
+Encoding: 163 163 67
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 2048 1792 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: currency
+Encoding: 164 164 68
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 2048 256 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: yen
+Encoding: 165 165 69
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: brokenbar
+Encoding: 166 166 70
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 2048 m 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 2048 1536 l 1
+ 2048 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 1536 1024 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: section
+Encoding: 167 167 71
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 2048 m 1
+ 2048 2048 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 2048 l 1
+EndSplineSet
+EndChar
+StartChar: dieresis
+Encoding: 168 168 72
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 1024 m 1
+ 1536 512 l 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 1536 1024 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: copyright
+Encoding: 169 169 73
+Width: 2048
+VWidth: 2621
+Flags: HWO
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 0 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 768 l 1
+ 256 768 l 1
+ 256 512 l 1
+ 0 512 l 1
+0 1536 m 1
+ 256 1536 l 1
+ 255 1792 l 1
+ 512 1792 l 1
+ 512 2048 l 1
+ 0 2048 l 1
+ 0 1536 l 1
+256 0 m 1
+ 768 0 l 1
+ 768 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1535 768 l 1
+ 1536 1024 l 1
+ 1792 1024 l 1
+ 1792 1280 l 1
+ 2048 1280 l 1
+ 2048 1792 l 1
+ 1792 1792 l 1
+ 1792 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 512 512 l 1
+ 512 256 l 1
+ 256 256 l 1
+ 256 0 l 1
+1280 0 m 1
+ 1792 0 l 1
+ 1792 256 l 1
+ 2048 256 l 1
+ 2048 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1280 256 l 1
+ 1280 0 l 1
+EndSplineSet
+EndChar
+StartChar: ordfeminine
+Encoding: 170 170 74
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1537 2048 m 1
+ 2048 2048 l 1
+ 2049 0 l 1
+ 1536 0 l 1
+ 1537 2048 l 1
+EndSplineSet
+EndChar
+StartChar: guillemotleft
+Encoding: 171 171 75
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1024 m 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 1024 l 1
+EndSplineSet
+EndChar
+StartChar: logicalnot
+Encoding: 172 172 76
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 1024 m 1
+ 2048 1024 l 1
+ 2048 0 l 1
+ 1024 0 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: uni00AD
+Encoding: 173 173 77
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+2048 1280 m 1
+ 1280 1280 l 1
+ 1280 2048 l 1
+ 768 2048 l 1
+ 768 768 l 1
+ 2048 768 l 1
+ 2048 1280 l 1
+EndSplineSet
+EndChar
+StartChar: registered
+Encoding: 174 174 78
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 1280 1280 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: macron
+Encoding: 175 175 79
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: degree
+Encoding: 176 176 80
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+2048 1280 m 1
+ 768 1280 l 1
+ 768 0 l 1
+ 1280 0 l 1
+ 1280 768 l 1
+ 2048 768 l 1
+ 2048 1280 l 1
+EndSplineSet
+EndChar
+StartChar: plusminus
+Encoding: 177 177 81
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: uni00B2
+Encoding: 178 178 82
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: uni00B3
+Encoding: 179 179 83
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: acute
+Encoding: 180 180 84
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: uni00B5
+Encoding: 181 181 85
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 768 2048 l 1
+ 768 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: paragraph
+Encoding: 182 182 86
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1280 2048 m 1
+ 2048 2048 l 1
+ 2048 0 l 1
+ 1280 0 l 1
+ 1280 2048 l 1
+EndSplineSet
+EndChar
+StartChar: periodcentered
+Encoding: 183 183 87
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 2048 1536 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: cedilla
+Encoding: 184 184 88
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: uni00B9
+Encoding: 185 185 89
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 2048 768 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: ordmasculine
+Encoding: 186 186 90
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 256 m 1
+ 768 256 l 1
+ 768 1283 l 1
+ 256 1283 l 1
+ 256 256 l 1
+768 1025 m 1
+ 1024 1025 l 1
+ 1024 513 l 1
+ 768 513 l 1
+ 768 1025 l 1
+1024 769 m 1
+ 1280 769 l 1
+ 1280 1281 l 1
+ 1024 1281 l 1
+ 1024 769 l 1
+1280 1025 m 1
+ 1536 1025 l 1
+ 1536 1537 l 1
+ 1280 1537 l 1
+ 1280 1025 l 1
+1536 1281 m 1
+ 1792 1281 l 1
+ 1792 1793 l 1
+ 1536 1793 l 1
+ 1536 1281 l 1
+1792 1537 m 1
+ 2048 1537 l 1
+ 2048 2049 l 1
+ 1792 2049 l 1
+ 1792 1537 l 1
+EndSplineSet
+EndChar
+StartChar: guillemotright
+Encoding: 187 187 91
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 1024 m 1
+ 0 1024 l 1
+ 0 0 l 1
+ 1024 0 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: onequarter
+Encoding: 188 188 92
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 2048 m 1
+ 2048 2048 l 1
+ 2048 1024 l 1
+ 1024 1024 l 1
+ 1024 2048 l 1
+EndSplineSet
+Ligature: 0 0 'frac' one slash four
+Ligature: 0 0 'frac' one fraction four
+EndChar
+StartChar: onehalf
+Encoding: 189 189 93
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+Ligature: 0 0 'frac' one slash two
+Ligature: 0 0 'frac' one fraction two
+EndChar
+StartChar: threequarters
+Encoding: 190 190 94
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1024 l 1
+ 0 1024 l 1
+ 0 2048 l 1
+EndSplineSet
+Ligature: 0 0 'frac' three slash four
+Ligature: 0 0 'frac' three fraction four
+EndChar
+StartChar: questiondown
+Encoding: 191 191 95
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1024 l 1
+ 0 1024 l 1
+ 0 2048 l 1
+1024 1024 m 1
+ 2048 1024 l 1
+ 2048 0 l 1
+ 1024 0 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: Agrave
+Encoding: 192 192 96
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: Aacute
+Encoding: 193 193 97
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 512 1792 l 1
+ 512 2048 l 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1536 1536 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1536 l 1
+512 1536 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+EndSplineSet
+EndChar
+StartChar: Acircumflex
+Encoding: 194 194 98
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Atilde
+Encoding: 195 195 99
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 1536 768 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Adieresis
+Encoding: 196 196 100
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1536 1536 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 1024 768 l 1
+ 1024 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Aring
+Encoding: 197 197 101
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: AE
+Encoding: 198 198 102
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Ccedilla
+Encoding: 199 199 103
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1536 1280 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Egrave
+Encoding: 200 200 104
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Eacute
+Encoding: 201 201 105
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1024 1792 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 512 512 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Ecircumflex
+Encoding: 202 202 106
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 767 m 1
+ 512 767 l 1
+ 512 511 l 1
+ 768 511 l 1
+ 768 1791 l 1
+ 512 1791 l 1
+ 512 2047 l 1
+ 1536 2047 l 1
+ 1536 1791 l 1
+ 1280 1791 l 1
+ 1280 511 l 1
+ 1024 511 l 1
+ 1024 255 l 1
+ 256 255 l 1
+ 256 511 l 1
+ 1 511 l 1
+ 0 767 l 1
+EndSplineSet
+EndChar
+StartChar: Edieresis
+Encoding: 203 203 107
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Igrave
+Encoding: 204 204 108
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Iacute
+Encoding: 205 205 109
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 1792 2048 l 1
+ 1792 256 l 1
+ 1290 256 l 1
+ 1290 1166 l 1
+ 1032 1166 l 1
+ 1032 937 l 1
+ 773 937 l 1
+ 773 1166 l 1
+ 515 1166 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Icircumflex
+Encoding: 206 206 110
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Idieresis
+Encoding: 207 207 111
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+512 1792 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Eth
+Encoding: 208 208 112
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Ntilde
+Encoding: 209 209 113
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 0 768 l 1
+ 256 768 l 1
+ 256 512 l 1
+ 768 512 l 1
+ 768 256 l 1
+ 1536 256 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 256 2048 l 1
+ 256 1792 l 1
+ 0 1792 l 1
+512 768 m 1
+ 512 1792 l 1
+ 1024 1792 l 1
+ 1024 768 l 1
+ 512 768 l 1
+EndSplineSet
+EndChar
+StartChar: Ograve
+Encoding: 210 210 114
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: Oacute
+Encoding: 211 211 115
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 512 768 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: Ocircumflex
+Encoding: 212 212 116
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1024 1792 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1792 l 1
+ 0 1792 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Otilde
+Encoding: 213 213 117
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Odieresis
+Encoding: 214 214 118
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: multiply
+Encoding: 215 215 119
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 512 256 l 1
+ 512 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 1024 768 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 1792 256 l 1
+ 1792 2048 l 1
+ 1280 2048 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 2048 l 1
+ 0 2048 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: Oslash
+Encoding: 216 216 120
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 256 768 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 512 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 1280 1024 l 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: Ugrave
+Encoding: 217 217 121
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Uacute
+Encoding: 218 218 122
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 256 768 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 512 1280 l 1
+ 768 1280 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 0 1792 l 1
+ 0 2048 l 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: Ucircumflex
+Encoding: 219 219 123
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: Udieresis
+Encoding: 220 220 124
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Yacute
+Encoding: 221 221 125
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 2048 m 1
+ 1280 2048 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 2048 l 1
+EndSplineSet
+EndChar
+StartChar: Thorn
+Encoding: 222 222 126
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 512 m 1
+ 1536 512 l 1
+ 1536 0 l 1
+ 1024 0 l 1
+ 1024 512 l 1
+0 512 m 1
+ 512 512 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 512 l 1
+1536 1024 m 1
+ 2048 1024 l 1
+ 2048 512 l 1
+ 1536 512 l 1
+ 1536 1024 l 1
+512 1024 m 1
+ 1024 1024 l 1
+ 1024 512 l 1
+ 512 512 l 1
+ 512 1024 l 1
+1024 1536 m 1
+ 1536 1536 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 1536 l 1
+0 1536 m 1
+ 512 1536 l 1
+ 512 1024 l 1
+ 0 1024 l 1
+ 0 1536 l 1
+1536 2048 m 1
+ 2048 2048 l 1
+ 2048 1536 l 1
+ 1536 1536 l 1
+ 1536 2048 l 1
+512 2048 m 1
+ 1024 2048 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+ 512 2048 l 1
+EndSplineSet
+EndChar
+StartChar: germandbls
+Encoding: 223 223 127
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1792 m 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 2048 512 l 1
+ 2048 1024 l 1
+ 1792 1024 l 1
+ 1792 1280 l 1
+ 1536 1280 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 512 2048 l 1
+ 512 1792 l 1
+1536 1792 m 1
+ 1793 1792 l 1
+ 1792 1536 l 1
+ 2048 1536 l 1
+ 2048 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+0 1280 m 1
+ 256 1280 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 513 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 1280 256 l 1
+ 1280 0 l 1
+ 1792 0 l 1
+ 1792 256 l 1
+ 1536 256 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1024 768 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 0 1792 l 1
+ 0 1280 l 1
+0 256 m 1
+ 256 256 l 1
+ 256 0 l 1
+ 768 0 l 1
+ 768 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: agrave
+Encoding: 224 224 128
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+EndChar
+StartChar: aacute
+Encoding: 225 225 129
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: acircumflex
+Encoding: 226 226 130
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 0 m 1
+ 0 1024 l 1
+ 2048 1024 l 1
+ 2048 0 l 1
+ 0 0 l 1
+EndSplineSet
+EndChar
+StartChar: atilde
+Encoding: 227 227 131
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 2048 1792 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: adieresis
+Encoding: 228 228 132
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 2048 256 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: aring
+Encoding: 229 229 133
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: ae
+Encoding: 230 230 134
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 2048 m 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 2048 1536 l 1
+ 2048 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 1536 1024 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: ccedilla
+Encoding: 231 231 135
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 2048 m 1
+ 2048 2048 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 2048 l 1
+EndSplineSet
+EndChar
+StartChar: egrave
+Encoding: 232 232 136
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1536 1024 m 1
+ 1536 512 l 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 1536 0 l 1
+ 1536 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 1536 1024 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+EndSplineSet
+EndChar
+StartChar: eacute
+Encoding: 233 233 137
+Width: 2048
+VWidth: 2621
+Flags: HWO
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 0 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 768 l 1
+ 256 768 l 1
+ 256 512 l 1
+ 0 512 l 1
+0 1536 m 1
+ 256 1536 l 1
+ 255 1792 l 1
+ 512 1792 l 1
+ 512 2048 l 1
+ 0 2048 l 1
+ 0 1536 l 1
+256 0 m 1
+ 768 0 l 1
+ 768 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1535 768 l 1
+ 1536 1024 l 1
+ 1792 1024 l 1
+ 1792 1280 l 1
+ 2048 1280 l 1
+ 2048 1792 l 1
+ 1792 1792 l 1
+ 1792 1536 l 1
+ 1536 1536 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 512 512 l 1
+ 512 256 l 1
+ 256 256 l 1
+ 256 0 l 1
+1280 0 m 1
+ 1792 0 l 1
+ 1792 256 l 1
+ 2048 256 l 1
+ 2048 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1280 256 l 1
+ 1280 0 l 1
+EndSplineSet
+EndChar
+StartChar: ecircumflex
+Encoding: 234 234 138
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1537 2048 m 1
+ 2048 2048 l 1
+ 2049 0 l 1
+ 1536 0 l 1
+ 1537 2048 l 1
+EndSplineSet
+EndChar
+StartChar: edieresis
+Encoding: 235 235 139
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 1024 m 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 1024 l 1
+EndSplineSet
+EndChar
+StartChar: igrave
+Encoding: 236 236 140
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 1024 m 1
+ 2048 1024 l 1
+ 2048 0 l 1
+ 1024 0 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: iacute
+Encoding: 237 237 141
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+2048 1280 m 1
+ 1280 1280 l 1
+ 1280 2048 l 1
+ 768 2048 l 1
+ 768 768 l 1
+ 2048 768 l 1
+ 2048 1280 l 1
+EndSplineSet
+EndChar
+StartChar: icircumflex
+Encoding: 238 238 142
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 1280 1280 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: idieresis
+Encoding: 239 239 143
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 512 m 1
+ 2048 512 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 512 l 1
+EndSplineSet
+EndChar
+StartChar: eth
+Encoding: 240 240 144
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+2048 1280 m 1
+ 768 1280 l 1
+ 768 0 l 1
+ 1280 0 l 1
+ 1280 768 l 1
+ 2048 768 l 1
+ 2048 1280 l 1
+EndSplineSet
+EndChar
+StartChar: ntilde
+Encoding: 241 241 145
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: ograve
+Encoding: 242 242 146
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: oacute
+Encoding: 243 243 147
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: ocircumflex
+Encoding: 244 244 148
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: otilde
+Encoding: 245 245 149
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 768 2048 l 1
+ 768 0 l 1
+ 0 0 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: odieresis
+Encoding: 246 246 150
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1280 2048 m 1
+ 2048 2048 l 1
+ 2048 0 l 1
+ 1280 0 l 1
+ 1280 2048 l 1
+EndSplineSet
+EndChar
+StartChar: divide
+Encoding: 247 247 151
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 2048 1536 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1536 l 1
+EndSplineSet
+EndChar
+StartChar: oslash
+Encoding: 248 248 152
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 2048 l 1
+ 0 2048 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: ugrave
+Encoding: 249 249 153
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 2048 768 l 1
+ 2048 0 l 1
+ 0 0 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: uacute
+Encoding: 250 250 154
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+256 256 m 1
+ 768 256 l 1
+ 768 1283 l 1
+ 256 1283 l 1
+ 256 256 l 1
+768 1025 m 1
+ 1024 1025 l 1
+ 1024 513 l 1
+ 768 513 l 1
+ 768 1025 l 1
+1024 769 m 1
+ 1280 769 l 1
+ 1280 1281 l 1
+ 1024 1281 l 1
+ 1024 769 l 1
+1280 1025 m 1
+ 1536 1025 l 1
+ 1536 1537 l 1
+ 1280 1537 l 1
+ 1280 1025 l 1
+1536 1281 m 1
+ 1792 1281 l 1
+ 1792 1793 l 1
+ 1536 1793 l 1
+ 1536 1281 l 1
+1792 1537 m 1
+ 2048 1537 l 1
+ 2048 2049 l 1
+ 1792 2049 l 1
+ 1792 1537 l 1
+EndSplineSet
+EndChar
+StartChar: ucircumflex
+Encoding: 251 251 155
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 1024 m 1
+ 0 1024 l 1
+ 0 0 l 1
+ 1024 0 l 1
+ 1024 1024 l 1
+EndSplineSet
+EndChar
+StartChar: udieresis
+Encoding: 252 252 156
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 2048 m 1
+ 2048 2048 l 1
+ 2048 1024 l 1
+ 1024 1024 l 1
+ 1024 2048 l 1
+EndSplineSet
+EndChar
+StartChar: yacute
+Encoding: 253 253 157
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: thorn
+Encoding: 254 254 158
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1024 l 1
+ 0 1024 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: ydieresis
+Encoding: 255 255 159
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 512 m 1
+ 1536 512 l 1
+ 1536 0 l 1
+ 1024 0 l 1
+ 1024 512 l 1
+0 512 m 1
+ 512 512 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 512 l 1
+1536 1024 m 1
+ 2048 1024 l 1
+ 2048 512 l 1
+ 1536 512 l 1
+ 1536 1024 l 1
+512 1024 m 1
+ 1024 1024 l 1
+ 1024 512 l 1
+ 512 512 l 1
+ 512 1024 l 1
+1024 1536 m 1
+ 1536 1536 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 1536 l 1
+0 1536 m 1
+ 512 1536 l 1
+ 512 1024 l 1
+ 0 1024 l 1
+ 0 1536 l 1
+1536 2048 m 1
+ 2048 2048 l 1
+ 2048 1536 l 1
+ 1536 1536 l 1
+ 1536 2048 l 1
+512 2048 m 1
+ 1024 2048 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+ 512 2048 l 1
+EndSplineSet
+EndChar
+StartChar: grave
+Encoding: 96 96 160
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: a
+Encoding: 97 97 161
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1536 m 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 512 1792 l 1
+ 512 2048 l 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1536 1536 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 1536 l 1
+512 1536 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+EndSplineSet
+EndChar
+StartChar: b
+Encoding: 98 98 162
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1024 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: c
+Encoding: 99 99 163
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 768 l 1
+ 1536 768 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: d
+Encoding: 100 100 164
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1024 2048 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1536 1536 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 1024 768 l 1
+ 1024 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: e
+Encoding: 101 101 165
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: f
+Encoding: 102 102 166
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: g
+Encoding: 103 103 167
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 1536 1280 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+EndSplineSet
+EndChar
+StartChar: h
+Encoding: 104 104 168
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: i
+Encoding: 105 105 169
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+512 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1024 1792 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 512 512 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: j
+Encoding: 106 106 170
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 767 m 1
+ 512 767 l 1
+ 512 511 l 1
+ 768 511 l 1
+ 768 1791 l 1
+ 512 1791 l 1
+ 512 2047 l 1
+ 1536 2047 l 1
+ 1536 1791 l 1
+ 1280 1791 l 1
+ 1280 511 l 1
+ 1024 511 l 1
+ 1024 255 l 1
+ 256 255 l 1
+ 256 511 l 1
+ 1 511 l 1
+ 0 767 l 1
+EndSplineSet
+EndChar
+StartChar: k
+Encoding: 107 107 171
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 768 1536 l 1
+ 768 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: l
+Encoding: 108 108 172
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: m
+Encoding: 109 109 173
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 1792 2048 l 1
+ 1792 256 l 1
+ 1290 256 l 1
+ 1290 1166 l 1
+ 1032 1166 l 1
+ 1032 937 l 1
+ 773 937 l 1
+ 773 1166 l 1
+ 515 1166 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: n
+Encoding: 110 110 174
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1792 l 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+ 768 768 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: o
+Encoding: 111 111 175
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 1792 l 1
+512 1792 m 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: p
+Encoding: 112 112 176
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 512 1024 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: q
+Encoding: 113 113 177
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1792 m 1
+ 0 768 l 1
+ 256 768 l 1
+ 256 512 l 1
+ 768 512 l 1
+ 768 256 l 1
+ 1536 256 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 1792 l 1
+ 1280 1792 l 1
+ 1280 2048 l 1
+ 256 2048 l 1
+ 256 1792 l 1
+ 0 1792 l 1
+512 768 m 1
+ 512 1792 l 1
+ 1024 1792 l 1
+ 1024 768 l 1
+ 512 768 l 1
+EndSplineSet
+EndChar
+StartChar: r
+Encoding: 114 114 178
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 2048 l 1
+512 1792 m 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+EndSplineSet
+EndChar
+StartChar: s
+Encoding: 115 115 179
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 512 768 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 1792 l 1
+ 256 1792 l 1
+ 256 2048 l 1
+ 1280 2048 l 1
+ 1280 1792 l 1
+ 1536 1792 l 1
+ 1536 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 512 1792 l 1
+ 512 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: t
+Encoding: 116 116 180
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+ 1024 1792 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1792 l 1
+ 0 1792 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: u
+Encoding: 117 117 181
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 256 256 l 1
+ 256 512 l 1
+ 0 512 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: v
+Encoding: 118 118 182
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 768 l 1
+ 1024 768 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 768 l 1
+ 1280 768 l 1
+ 1280 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: w
+Encoding: 119 119 183
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 256 m 1
+ 512 256 l 1
+ 512 512 l 1
+ 768 512 l 1
+ 768 768 l 1
+ 1024 768 l 1
+ 1024 512 l 1
+ 1280 512 l 1
+ 1280 256 l 1
+ 1792 256 l 1
+ 1792 2048 l 1
+ 1280 2048 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 1280 l 1
+ 768 1280 l 1
+ 768 1024 l 1
+ 512 1024 l 1
+ 512 2048 l 1
+ 0 2048 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+StartChar: x
+Encoding: 120 120 184
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 256 768 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 512 1280 l 1
+ 256 1280 l 1
+ 256 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 1280 1024 l 1
+ 1280 768 l 1
+ 1536 768 l 1
+ 1536 256 l 1
+ 1024 256 l 1
+ 1024 768 l 1
+ 512 768 l 1
+ 512 256 l 1
+ 0 256 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: y
+Encoding: 121 121 185
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1280 l 1
+ 1024 1280 l 1
+ 1024 2048 l 1
+ 1536 2048 l 1
+ 1536 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1024 1024 l 1
+ 1024 256 l 1
+ 512 256 l 1
+ 512 1024 l 1
+ 256 1024 l 1
+ 256 1280 l 1
+ 0 1280 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: z
+Encoding: 122 122 186
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 768 m 1
+ 256 768 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 512 1280 l 1
+ 768 1280 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1792 l 1
+ 0 1792 l 1
+ 0 2048 l 1
+ 1536 2048 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1280 l 1
+ 1024 1280 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 768 l 1
+ 512 768 l 1
+ 512 512 l 1
+ 1536 512 l 1
+ 1536 256 l 1
+ 0 256 l 1
+ 0 768 l 1
+EndSplineSet
+EndChar
+StartChar: braceleft
+Encoding: 123 123 187
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 1280 m 1
+ 768 1280 l 1
+ 768 2048 l 1
+ 1280 2048 l 1
+ 1280 1280 l 1
+ 2048 1280 l 1
+ 2048 768 l 1
+ 1280 768 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 768 l 1
+ 0 768 l 1
+ 0 1280 l 1
+EndSplineSet
+EndChar
+StartChar: bar
+Encoding: 124 124 188
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+0 2048 m 1
+ 512 2048 l 1
+ 512 1536 l 1
+ 1024 1536 l 1
+ 1024 1024 l 1
+ 512 1024 l 1
+ 512 512 l 1
+ 1024 512 l 1
+ 1024 0 l 1
+ 512 0 l 1
+ 512 512 l 1
+ 0 512 l 1
+ 0 1024 l 1
+ 512 1024 l 1
+ 512 1536 l 1
+ 0 1536 l 1
+ 0 2048 l 1
+EndSplineSet
+EndChar
+StartChar: braceright
+Encoding: 125 125 189
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+768 2048 m 1
+ 1280 2048 l 1
+ 1280 0 l 1
+ 768 0 l 1
+ 768 2048 l 1
+EndSplineSet
+EndChar
+StartChar: asciitilde
+Encoding: 126 126 190
+Width: 2048
+VWidth: 2621
+Flags: HW
+TeX: 0 0 0 0
+Fore
+1024 512 m 1
+ 1536 512 l 1
+ 1536 0 l 1
+ 1024 0 l 1
+ 1024 512 l 1
+0 512 m 1
+ 512 512 l 1
+ 512 0 l 1
+ 0 0 l 1
+ 0 512 l 1
+1536 1024 m 1
+ 2048 1024 l 1
+ 2048 512 l 1
+ 1536 512 l 1
+ 1536 1024 l 1
+512 1024 m 1
+ 1024 1024 l 1
+ 1024 512 l 1
+ 512 512 l 1
+ 512 1024 l 1
+1024 1536 m 1
+ 1536 1536 l 1
+ 1536 1024 l 1
+ 1024 1024 l 1
+ 1024 1536 l 1
+0 1536 m 1
+ 512 1536 l 1
+ 512 1024 l 1
+ 0 1024 l 1
+ 0 1536 l 1
+1536 2048 m 1
+ 2048 2048 l 1
+ 2048 1536 l 1
+ 1536 1536 l 1
+ 1536 2048 l 1
+512 2048 m 1
+ 1024 2048 l 1
+ 1024 1536 l 1
+ 512 1536 l 1
+ 512 2048 l 1
+EndSplineSet
+EndChar
+StartChar: uni007F
+Encoding: 127 127 191
+Width: 2048
+VWidth: 2621
+Flags: HWO
+TeX: 0 0 0 0
+Fore
+512 1792 m 1
+ 768 1792 l 1
+ 768 1536 l 1
+ 1024 1536 l 1
+ 1024 1280 l 1
+ 1280 1280 l 1
+ 1280 1024 l 1
+ 1536 1024 l 1
+ 1536 768 l 1
+ 1792 768 l 1
+ 1792 512 l 1
+ 2048 512 l 1
+ 2048 1024 l 1
+ 1792 1024 l 1
+ 1792 1280 l 1
+ 1536 1280 l 1
+ 1536 1536 l 1
+ 1280 1536 l 1
+ 1280 1792 l 1
+ 1024 1792 l 1
+ 1024 2048 l 1
+ 512 2048 l 1
+ 512 1792 l 1
+1536 1792 m 1
+ 1793 1792 l 1
+ 1792 1536 l 1
+ 2048 1536 l 1
+ 2048 2048 l 1
+ 1536 2048 l 1
+ 1536 1792 l 1
+0 1280 m 1
+ 256 1280 l 1
+ 256 1024 l 1
+ 512 1024 l 1
+ 513 768 l 1
+ 768 768 l 1
+ 768 512 l 1
+ 1024 512 l 1
+ 1024 256 l 1
+ 1280 256 l 1
+ 1280 0 l 1
+ 1792 0 l 1
+ 1792 256 l 1
+ 1536 256 l 1
+ 1536 512 l 1
+ 1280 512 l 1
+ 1280 768 l 1
+ 1024 768 l 1
+ 1024 1024 l 1
+ 768 1024 l 1
+ 768 1280 l 1
+ 512 1280 l 1
+ 512 1536 l 1
+ 256 1536 l 1
+ 256 1792 l 1
+ 0 1792 l 1
+ 0 1280 l 1
+0 256 m 1
+ 256 256 l 1
+ 256 0 l 1
+ 768 0 l 1
+ 768 256 l 1
+ 512 256 l 1
+ 512 512 l 1
+ 256 512 l 1
+ 256 768 l 1
+ 0 768 l 1
+ 0 256 l 1
+EndSplineSet
+EndChar
+EndChars
+EndSplineFont

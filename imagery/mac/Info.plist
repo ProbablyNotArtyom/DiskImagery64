@@ -1,0 +1,80 @@
+<!DOCTYPE plist PUBLIC
+        "-//Apple Computer//DTD PLIST 1.0//EN"
+        "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>CFBundleDocumentTypes</key>
+        <array>
+            <dict>
+                <key>CFBundleTypeExtensions</key>
+                <array>
+                    <string>d64</string>
+                </array>
+                <key>CFBundleTypeIconFile</key>
+                <string>d64.icns</string>
+                <key>CFBundleTypeMIMETypes</key>
+                <array>
+                    <string>application/d64</string>
+                </array>
+                <key>CFBundleTypeName</key>
+                <string>D64 Disk Image File</string>
+                <key>CFBundleTypeRole</key>
+                <string>Editor</string>
+                <key>LSIsAppleDefaultForType</key>
+                <true/>
+            </dict>
+            <dict>
+                <key>CFBundleTypeExtensions</key>
+                <array>
+                    <string>d71</string>
+                </array>
+                <key>CFBundleTypeIconFile</key>
+                <string>d71.icns</string>
+                <key>CFBundleTypeMIMETypes</key>
+                <array>
+                    <string>application/d71</string>
+                </array>
+                <key>CFBundleTypeName</key>
+                <string>D71 Disk Image File</string>
+                <key>CFBundleTypeRole</key>
+                <string>Editor</string>
+                <key>LSIsAppleDefaultForType</key>
+                <true/>
+            </dict>
+            <dict>
+                <key>CFBundleTypeExtensions</key>
+                <array>
+                    <string>d81</string>
+                </array>
+                <key>CFBundleTypeIconFile</key>
+                <string>d81.icns</string>
+                <key>CFBundleTypeMIMETypes</key>
+                <array>
+                    <string>application/d64</string>
+                </array>
+                <key>CFBundleTypeName</key>
+                <string>D81 Disk Image File</string>
+                <key>CFBundleTypeRole</key>
+                <string>Editor</string>
+                <key>LSIsAppleDefaultForType</key>
+                <true/>
+            </dict>
+        </array>
+        <key>CFBundleIconFile</key>
+        <string>imagery.icns</string>
+        <key>CFBundleExecutable</key>
+        <string>DiskImagery64</string>
+        <key>CFBundleIdentifier</key>
+        <string>de.lallafa.Imager64</string>
+        <key>CFBundleInfoDictionaryVersion</key>
+        <string>6.0</string>
+        <key>CFBundlePackageType</key>
+        <string>APPL</string>
+        <key>CFBundleSignature</key>
+        <string>????</string>
+        <key>CFBundleVersion</key>
+        <string>1.0</string>
+        <key>CSResourcesFileMapped</key>
+        <true/>
+    </dict>
+</plist>
