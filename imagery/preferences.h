@@ -9,6 +9,9 @@
 #include <QListView>
 #include <QCheckBox>
 
+#include "ColorPickerButton.h"
+#include "ColorPickerActionWidget.h"
+
 class Preferences : public QDialog
 {
   Q_OBJECT
@@ -41,6 +44,8 @@ public:
   // font defaults
   static void setFontDefaults(bool shifted,const QFont &font,const QFont &shiftedFont);
   static void getFontDefaults(bool &shifted,QFont &font,QFont &shiftedFont);
+  static void setColorDefaults(const QColor &fgColor, const QColor &bgColor);
+  static void getColorDefaults(QColor &fgColor, QColor &bgColor);
   // separator defaults
   static void setSeparatorDefaults(const QStringList &templates);
   static void getSeparatorDefaults(QStringList &templates);
@@ -56,6 +61,8 @@ protected slots:
   void onPickEmuApp();
   void onPickFont();
   void onPickShiftedFont();
+  void onFontColourFG(QColor color);
+  void onFontColourBG(QColor color);
   void onPickWcPrg();
 
 protected:
@@ -68,6 +75,8 @@ protected:
   QCheckBox *m_fontShiftedCheck;
   QLineEdit *m_fontNameEdit;
   QLineEdit *m_fontSizeEdit;
+  ColorPickerButton *m_fontColourFGButton;
+  ColorPickerButton *m_fontColourBGButton;
   QLineEdit *m_fontShiftedNameEdit;
   QLineEdit *m_fontShiftedSizeEdit;
   // separator controls

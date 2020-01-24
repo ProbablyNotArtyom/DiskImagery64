@@ -85,6 +85,8 @@ protected:
   void runEmu(const QString &app,const QString &args,const QString &fileName="");
   QString replaceArgTags(const QString &str,const QString &fileName="");
   QFont currentFont();
+  QColor currentFGColor();
+  QColor currentBGColor();
   
   //! return current cbm file
   virtual bool getCurrentFile(CBMFile &file);

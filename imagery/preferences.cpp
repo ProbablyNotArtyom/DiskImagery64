@@ -25,6 +25,8 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
+#include "ColorPickerButton.h"
+
 Preferences::Preferences(QWidget *parent) : QDialog(parent) {
     setWindowTitle("DiskImagery64: " + tr("Preferences"));
     setWindowIcon(QIcon(":/imagery/imagery-16.png"));
@@ -127,6 +129,13 @@ QWidget *Preferences::createFontGroup(QWidget *parent) {
     connect(fontShiftedNameButton, SIGNAL(clicked()), this,
             SLOT(onPickShiftedFont()));
 
+	QLabel *fontColourFGLabel = new QLabel(tr("Foreground Color:"), fontGroup);
+    QLabel *fontColourBGLabel = new QLabel(tr("Background Color:"), fontGroup);
+    m_fontColourFGButton = new ColorPickerButton(fontGroup);
+    m_fontColourBGButton = new ColorPickerButton(fontGroup);
+    connect(m_fontColourFGButton, SIGNAL(colorSelected(QColor)), this, SLOT(onFontColourFG(QColor)));
+    connect(m_fontColourBGButton, SIGNAL(colorSelected(QColor)), this, SLOT(onFontColourBG(QColor)));
+
     QGridLayout *fontLayout = new QGridLayout(fontGroup);
     fontLayout->addWidget(m_fontShiftedCheck, 0, 1, 1, 3);
     fontLayout->addWidget(fontNameLabel, 1, 0);
@@ -137,6 +146,10 @@ QWidget *Preferences::createFontGroup(QWidget *parent) {
     fontLayout->addWidget(m_fontShiftedNameEdit, 2, 1);
     fontLayout->addWidget(m_fontShiftedSizeEdit, 2, 2);
     fontLayout->addWidget(fontShiftedNameButton, 2, 3);
+    fontLayout->addWidget(fontColourFGLabel, 4, 0);
+    fontLayout->addWidget(m_fontColourFGButton, 4, 1);
+    fontLayout->addWidget(fontColourBGLabel, 5, 0);
+    fontLayout->addWidget(m_fontColourBGButton, 5, 1);
     fontLayout->setRowStretch(3, 10);
     fontLayout->setColumnStretch(0, 0);
     fontLayout->setColumnStretch(1, 5);
@@ -169,6 +182,19 @@ void Preferences::onPickShiftedFont() {
         m_fontShiftedSizeEdit->setText(
             QString::number(shiftedFont.pointSize()));
     }
+}
+
+void Preferences::onFontColourFG(QColor color) {
+    QPalette p = m_fontColourFGButton->palette();
+    p.setColor(QPalette::Button, color);
+    m_fontColourFGButton->setPalette(p);
+
+}
+
+void Preferences::onFontColourBG(QColor color) {
+    QPalette p = m_fontColourBGButton->palette();
+    p.setColor(QPalette::Button, color);
+    m_fontColourBGButton->setPalette(p);
 }
 
 QWidget *Preferences::createSeparatorGroup(QWidget *parent) {
@@ -561,6 +587,25 @@ void Preferences::setFontDefaults(bool shifted, const QFont &font,
     settings.setValue("Shifted", shifted);
     settings.setValue("Font", font);
     settings.setValue("ShiftedFont", shiftedFont);
+    settings.endGroup();
+}
+
+void Preferences::getColorDefaults(QColor &fgColor, QColor &bgColor) {
+    QColor defFGColor(QColor(184, 163, 255));
+    QColor defBGColor(QColor(84, 65, 155));
+
+    QSettings settings;
+    settings.beginGroup("Preferences/Color");
+    bgColor = settings.value("BGColor", defBGColor).value<QColor>();
+    fgColor = settings.value("FGColor", defFGColor).value<QColor>();
+    settings.endGroup();
+}
+
+void Preferences::setColorDefaults(const QColor &fgColor, const QColor &bgColor) {
+    QSettings settings;
+    settings.beginGroup("Preferences/Color");
+    settings.setValue("FGColor", fgColor);
+    settings.setValue("BGColor", bgColor);
     settings.endGroup();
 }
 

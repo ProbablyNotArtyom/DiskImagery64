@@ -81,6 +81,8 @@ void DImageWin::init() {
 
     QFont font, shiftedFont;
     Preferences::getFontDefaults(m_fontShifted, font, shiftedFont);
+    QColor fgColor, bgColor;
+    Preferences::getColorDefaults(fgColor, bgColor);
     updateFont();
     updateDImage();
     connect(m_model, SIGNAL(changedDImage()), this, SLOT(updateDImage()));
@@ -133,13 +135,52 @@ QFont DImageWin::currentFont() {
     return m_fontShifted ? shiftedFont : font;
 }
 
+QColor DImageWin::currentFGColor() {
+    QColor fgColor, bgColor;
+    Preferences::getColorDefaults(fgColor, bgColor);
+    return fgColor;
+}
+
+QColor DImageWin::currentBGColor() {
+    QColor fgColor, bgColor;
+    Preferences::getColorDefaults(fgColor, bgColor);
+    return bgColor;
+}
+
 void DImageWin::updateFont() {
     QFont curFont = currentFont();
+    QColor curFG = currentFGColor();
+    QColor curBG = currentBGColor();
+
+    QPalette p;
+    p.setColor(QPalette::Foreground, curFG);
+    p.setColor(QPalette::Text, curFG);
+    p.setColor(QPalette::WindowText, curFG);
+    p.setColor(QPalette::Base, curBG);
+    p.setColor(QPalette::Background, curBG);
+    p.setColor(QPalette::Window, curBG);
+    p.setColor(QPalette::NoRole, curBG);
+    p.setColor(QPalette::Light, curBG);
+    p.setColor(QPalette::Dark, curBG);
 
     m_dirView->setFont(curFont);
     m_blocksFree->setFont(curFont);
     m_driveStatus->setFont(curFont);
     m_diskTitle->setFont(curFont);
+
+    m_dirView->setPalette(p);
+    m_blocksFree->setPalette(p);
+    m_driveStatus->setPalette(p);
+    m_diskTitle->setPalette(p);
+
+    m_dirView->setForegroundRole(QPalette::Foreground);
+    m_blocksFree->setForegroundRole(QPalette::Foreground);
+    m_driveStatus->setForegroundRole(QPalette::Foreground);
+    m_diskTitle->setForegroundRole(QPalette::Foreground);
+    m_dirView->setBackgroundRole(QPalette::Background);
+    m_blocksFree->setBackgroundRole(QPalette::Background);
+    m_driveStatus->setBackgroundRole(QPalette::Background);
+    m_diskTitle->setBackgroundRole(QPalette::Background);
 
 #ifdef Q_OS_WIN32
     // restore font in list view headers

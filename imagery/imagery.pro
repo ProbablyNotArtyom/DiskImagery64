@@ -9,8 +9,11 @@ TARGET   = DiskImagery64
 CONFIG += qt create_prl link_prl
 QT += network
 
-HEADERS += dimagemodel.h   dimagewin.h   filewin.h   filemodel.h
-SOURCES += dimagemodel.cpp dimagewin.cpp filewin.cpp filemodel.cpp
+HEADERS += dimagemodel.h   dimagewin.h   filewin.h   filemodel.h \
+    ColorPickerActionWidget.h \
+    ColorPickerButton.h
+SOURCES += dimagemodel.cpp dimagewin.cpp filewin.cpp filemodel.cpp \
+    ColorPickerButton.cpp
 HEADERS += netwin.h   blockmapwidget.h   copydialog.h
 SOURCES += netwin.cpp blockmapwidget.cpp copydialog.cpp
 HEADERS += mainwin.h   preferences.h   app.h   version.h
