@@ -26,15 +26,14 @@ void DImageModel::updateDImage() {
     setHeaderData(1, Qt::Horizontal, tr("Blocks"));
     setHeaderData(2, Qt::Horizontal, tr("Type"));
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
         setFileRow(m_files.at(i), i);
-    }
 }
 
 void DImageModel::setFileRow(const CBMFile &file, int row) {
     QString name = Petscii::convertToDisplayString(file.name());
     QString blocks;
-    blocks.sprintf("%3d", file.blocks());
+    blocks.asprintf("%3d", file.blocks());
     QString type = file.convertTypeFlagsToString();
 
     setData(index(row, 0), name);
@@ -44,16 +43,14 @@ void DImageModel::setFileRow(const CBMFile &file, int row) {
 
 Qt::ItemFlags DImageModel::flags(const QModelIndex &index) const {
     Qt::ItemFlags flags = Qt::ItemIsEnabled | Qt::ItemIsSelectable |
-                          Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled;
+    Qt::ItemIsDragEnabled | Qt::ItemIsDropEnabled;
 
-    if (index.column() == 0)
-        flags |= Qt::ItemIsEditable;
+    if (index.column() == 0) flags |= Qt::ItemIsEditable;
 
     return flags;
 }
 
-bool DImageModel::setData(const QModelIndex &index, const QVariant &value,
-                          int role) {
+bool DImageModel::setData(const QModelIndex &index, const QVariant &value, int role) {
     if ((role == Qt::EditRole) && (index.column() == 0)) {
         QString name = value.toString();
         CBMFile &file = m_files[index.row()];
@@ -80,9 +77,7 @@ QMimeData *DImageModel::copySelection(const QModelIndexList &indexes) const {
         if (index.column() == 0) {
             int entry = index.row();
             CBMFile file = m_files.at(entry);
-            if (m_dimage->readFile(file)) {
-                files << file;
-            }
+            if (m_dimage->readFile(file)) files << file;
         }
     }
 
@@ -113,26 +108,23 @@ bool DImageModel::pasteSelection(const QMimeData *mimeData) {
             if (m_dimage->writeFile(file)) {
                 // report change
                 emit changedDImage();
-            } else
-                errorFiles << (file.convertToAsciiName() + ": " +
-                               tr("Write Error"));
-        } else
-            errorFiles << (file.convertToAsciiName() + ": " +
-                           tr("Already Exists"));
+            } else errorFiles << (file.convertToAsciiName() + ": " + tr("Write Error"));
+        } else errorFiles << (file.convertToAsciiName() + ": " + tr("Already Exists"));
     }
 
     // report errors while dropping
     if (!errorFiles.empty()) {
         QString message = tr("Erros occured:") + "\n" + errorFiles.join("\n");
-        QMessageBox::warning(0, tr("Error"), message);
+        QMessageBox::warning(nullptr, tr("Error"), message);
     }
 
     return true;
 }
 
 bool DImageModel::dropMimeData(const QMimeData *mimeData,
-                               Qt::DropAction /*action*/, int /*row*/,
-                               int /*column*/, const QModelIndex & /*parent*/) {
+    Qt::DropAction /*action*/, int /*row*/,
+    int /*column*/, const QModelIndex & /*parent*/) {
+
     return pasteSelection(mimeData);
 }
 
@@ -143,16 +135,16 @@ bool DImageModel::deleteSelection(const QModelIndexList &indexes) {
         bool ok = m_dimage->deleteFile(file);
         allOk = allOk && ok;
     }
+
     emit changedDImage();
     return allOk;
 }
 
 bool DImageModel::fileForIndex(const QModelIndex &index, CBMFile &file) const {
-    if (!index.isValid())
-        return false;
     int pos = index.row();
-    if ((pos < 0) || (pos >= m_files.size()))
-        return false;
+
+    if (!index.isValid()) return false;
+    if ((pos < 0) || (pos >= m_files.size())) return false;
     file = m_files.at(pos);
     return true;
 }

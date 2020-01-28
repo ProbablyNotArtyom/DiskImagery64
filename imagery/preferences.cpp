@@ -25,6 +25,7 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
+#include "ColorPickerActionWidget.h"
 #include "ColorPickerButton.h"
 
 Preferences::Preferences(QWidget *parent) : QDialog(parent) {
@@ -126,8 +127,7 @@ QWidget *Preferences::createFontGroup(QWidget *parent) {
     connect(fontNameButton, SIGNAL(clicked()), this, SLOT(onPickFont()));
     QToolButton *fontShiftedNameButton = new QToolButton(fontGroup);
     fontShiftedNameButton->setText("F");
-    connect(fontShiftedNameButton, SIGNAL(clicked()), this,
-            SLOT(onPickShiftedFont()));
+    connect(fontShiftedNameButton, SIGNAL(clicked()), this, SLOT(onPickShiftedFont()));
 
 	QLabel *fontColourFGLabel = new QLabel(tr("Foreground Color:"), fontGroup);
     QLabel *fontColourBGLabel = new QLabel(tr("Background Color:"), fontGroup);
@@ -236,10 +236,8 @@ void Preferences::onAddSeparator() {
 }
 
 void Preferences::onDelSeparator() {
-    QModelIndexList modelIndexList =
-        m_separatorView->selectionModel()->selectedRows();
-    if (modelIndexList.size() != 1)
-        return;
+    QModelIndexList modelIndexList = m_separatorView->selectionModel()->selectedRows();
+    if (modelIndexList.size() != 1) return;
     QModelIndex removeIndex = modelIndexList[0];
     m_separatorModel->removeRows(removeIndex.row(), 1);
 }
@@ -247,19 +245,19 @@ void Preferences::onDelSeparator() {
 QWidget *Preferences::createEmulatorGroup(QWidget *parent) {
     // emulator group
     QString emuInfoMsg = "<small>" + tr("Argument Patterns:") +
-                         "<br>"
-                         "<b>%i</b> " +
-                         tr("Disk Image Path") +
-                         "<br>"
-                         "<b>%p</b> " +
-                         tr("Program Name (Unicode)") +
-                         "<br>"
-                         "<b>%P</b> " +
-                         tr("Program Name (PETSCII)") +
-                         "<br>"
-                         "</small>";
-    QGroupBox *emuGroup =
-        new QGroupBox(tr("External Commodore Emulator"), parent);
+         "<br>"
+         "<b>%i</b> " +
+         tr("Disk Image Path") +
+         "<br>"
+         "<b>%p</b> " +
+         tr("Program Name (Unicode)") +
+         "<br>"
+         "<b>%P</b> " +
+         tr("Program Name (PETSCII)") +
+         "<br>"
+         "</small>";
+
+    QGroupBox *emuGroup = new QGroupBox(tr("External Commodore Emulator"), parent);
     QLabel *emuAppLabel = new QLabel(tr("Application:"), emuGroup);
     QLabel *emuMountArgsLabel = new QLabel(tr("Mount Image:"), emuGroup);
     QLabel *emuRunArgsLabel = new QLabel(tr("Run Program:"), emuGroup);
@@ -294,11 +292,8 @@ QWidget *Preferences::createEmulatorGroup(QWidget *parent) {
 void Preferences::onPickEmuApp() {
     QString oldPath = m_emuAppEdit->text();
     QString newPath = QFileDialog::getOpenFileName(
-        this, tr("Pick Emulator Application"), oldPath, QString(), 0,
-        QFileDialog::DontResolveSymlinks);
-    if (newPath != "") {
-        m_emuAppEdit->setText(newPath);
-    }
+        this, tr("Pick Emulator Application"), oldPath, QString(), nullptr, QFileDialog::DontResolveSymlinks);
+    if (newPath != "") m_emuAppEdit->setText(newPath);
 }
 
 QWidget *Preferences::createNetworkGroup(QWidget *parent) {
@@ -342,11 +337,8 @@ QWidget *Preferences::createNetworkGroup(QWidget *parent) {
 void Preferences::onPickWcPrg() {
     QString oldPath = m_netWarpCopyPrgEdit->text();
     QString newPath = QFileDialog::getOpenFileName(
-        this, tr("Pick WarpCopy PRG"), oldPath, QString(), 0,
-        QFileDialog::DontResolveSymlinks);
-    if (newPath != "") {
-        m_netWarpCopyPrgEdit->setText(newPath);
-    }
+        this, tr("Pick WarpCopy PRG"), oldPath, QString(), nullptr, QFileDialog::DontResolveSymlinks);
+    if (newPath != "") m_netWarpCopyPrgEdit->setText(newPath);
 }
 
 // ----- load/save -----
@@ -438,8 +430,8 @@ void Preferences::save() {
 
 // image
 
-void Preferences::getImageDefaults(QString &file, QString &title, QString &id,
-                                   int &counter) {
+void Preferences::getImageDefaults(QString &file, QString &title, QString &id, int &counter) {
+
     QSettings settings;
     settings.beginGroup("Preferences/Image");
     file = settings.value("File", "image%3c.d64").toString();
@@ -449,8 +441,8 @@ void Preferences::getImageDefaults(QString &file, QString &title, QString &id,
     settings.endGroup();
 }
 
-void Preferences::setImageDefaults(const QString &file, const QString &title,
-                                   const QString &id, int counter) {
+void Preferences::setImageDefaults(const QString &file, const QString &title, const QString &id, int counter) {
+
     QSettings settings;
     settings.beginGroup("Preferences/Image");
     settings.setValue("File", file);
@@ -466,12 +458,9 @@ void Preferences::getNextImageName(QString &file, QString &title, QString &id) {
     getImageDefaults(f, t, i, counter);
 
     bool usedCounter = false;
-    if (insertCounter(f, counter, file))
-        usedCounter = true;
-    if (insertCounter(t, counter, title))
-        usedCounter = true;
-    if (insertCounter(i, counter, id))
-        usedCounter = true;
+    if (insertCounter(f, counter, file)) usedCounter = true;
+    if (insertCounter(t, counter, title)) usedCounter = true;
+    if (insertCounter(i, counter, id)) usedCounter = true;
 
     // ensure id size
     if (id.isEmpty()) {
@@ -482,22 +471,16 @@ void Preferences::getNextImageName(QString &file, QString &title, QString &id) {
         id.resize(2);
         id[1] = ' ';
     }
-    if (id.size() > 2) {
-        id.resize(2);
-    }
-    // ensure title size
-    if (title.size() > 16) {
-        title.resize(16);
-    }
 
+    if (id.size() > 2) id.resize(2);
+    if (title.size() > 16) title.resize(16);
     if (usedCounter) {
         counter++;
         setImageDefaults(f, t, i, counter);
     }
 }
 
-bool Preferences::insertCounter(const QString &pattern, int counter,
-                                QString &result) {
+bool Preferences::insertCounter(const QString &pattern, int counter, QString &result) {
     bool counterFound = false;
     int size = pattern.size();
     for (int i = 0; i < size; i++) {
@@ -515,8 +498,7 @@ bool Preferences::insertCounter(const QString &pattern, int counter,
                             replaced = true;
                             counterFound = true;
                             i += 2;
-                            QString line =
-                                "0000000000" + QString::number(counter);
+                            QString line = "0000000000" + QString::number(counter);
                             result += line.right(padding);
                         }
                     }
@@ -535,17 +517,15 @@ bool Preferences::insertCounter(const QString &pattern, int counter,
                 }
             }
         }
-        if (!replaced) {
-            result += pattern[i];
-        }
+        if (!replaced) result += pattern[i];
     }
     return counterFound;
 }
 
 // emulator
 
-void Preferences::getEmulatorDefaults(QString &app, QString &mountArgs,
-                                      QString &runArgs) {
+void Preferences::getEmulatorDefaults(QString &app, QString &mountArgs, QString &runArgs) {
+
     QSettings settings;
     settings.beginGroup("Preferences/Emulator");
     app = settings.value("App", "x64").toString();
@@ -554,9 +534,7 @@ void Preferences::getEmulatorDefaults(QString &app, QString &mountArgs,
     settings.endGroup();
 }
 
-void Preferences::setEmulatorDefaults(const QString &app,
-                                      const QString &mountArgs,
-                                      const QString &runArgs) {
+void Preferences::setEmulatorDefaults(const QString &app, const QString &mountArgs, const QString &runArgs) {
     QSettings settings;
     settings.beginGroup("Preferences/Emulator");
     settings.setValue("App", app);
@@ -567,8 +545,7 @@ void Preferences::setEmulatorDefaults(const QString &app,
 
 // font
 
-void Preferences::getFontDefaults(bool &shifted, QFont &font,
-                                  QFont &shiftedFont) {
+void Preferences::getFontDefaults(bool &shifted, QFont &font, QFont &shiftedFont) {
     QFont defFont("CBM", 8);
     QFont defShiftedFont("CBMShift", 8);
 
@@ -580,8 +557,7 @@ void Preferences::getFontDefaults(bool &shifted, QFont &font,
     settings.endGroup();
 }
 
-void Preferences::setFontDefaults(bool shifted, const QFont &font,
-                                  const QFont &shiftedFont) {
+void Preferences::setFontDefaults(bool shifted, const QFont &font, const QFont &shiftedFont) {
     QSettings settings;
     settings.beginGroup("Preferences/Font");
     settings.setValue("Shifted", shifted);
@@ -624,8 +600,7 @@ void Preferences::getSeparatorDefaults(QStringList &templates) {
     const QChar defChars[5] = {'-', '=', '+', '*', '\x60'};
     for (int i = 0; i < 5; i++) {
         QString sep;
-        for (int j = 0; j < 16; j++)
-            sep += defChars[i];
+        for (int j = 0; j < 16; j++)  sep += defChars[i];
         defSeparators << sep;
     }
 
@@ -649,10 +624,10 @@ void Preferences::getNetworkDefaults(AddrPair &addrPair) {
     settings.beginGroup("Preferences/Network");
     QString ma = settings.value("MyAddr", "192.168.64.1").toString();
     addrPair.myAddr = QHostAddress(ma);
-    addrPair.myPort = (quint16)settings.value("MyPort", 0).toUInt();
+    addrPair.myPort = quint16(settings.value("MyPort", 0).toUInt());
     QString ca = settings.value("C64Addr", "192.168.64.2").toString();
     addrPair.c64Addr = QHostAddress(ca);
-    addrPair.c64Port = (quint16)settings.value("C64Port", 0).toUInt();
+    addrPair.c64Port = quint16(settings.value("C64Port", 0).toUInt());
     settings.endGroup();
 }
 

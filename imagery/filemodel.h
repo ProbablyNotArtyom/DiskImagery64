@@ -24,26 +24,26 @@
 #include <QDirModel>
 
 class FileModel : public QDirModel {
-  Q_OBJECT
-  
+    Q_OBJECT
+
 public:
-  FileModel(QObject *parent=0);
-  ~FileModel();
+    FileModel(QObject *parent=0);
+    ~FileModel();
 
-  Qt::ItemFlags flags(const QModelIndex &) const;
+    Qt::ItemFlags flags(const QModelIndex &) const;
 
-  bool fileForIndex(const QModelIndex &index,CBMFile &file) const;
-  
-  // change image
-  QMimeData *copySelection(const QModelIndexList &indexes) const;
-  bool pasteSelection(const QMimeData *data,const QModelIndex &parent);
-  bool deleteSelection(const QModelIndexList &indexes);
-  
-  // drag & drop support
-  QStringList mimeTypes () const;
-  QMimeData *mimeData(const QModelIndexList &indexes) const;
-  bool dropMimeData(const QMimeData *data, Qt::DropAction action,
-                    int row,int column,const QModelIndex &parent);
+    bool fileForIndex(const QModelIndex &index,CBMFile &file) const;
+
+    // change image
+    QMimeData *copySelection(const QModelIndexList &indexes) const;
+    bool pasteSelection(const QMimeData *data,const QModelIndex &parent);
+    bool deleteSelection(const QModelIndexList &indexes);
+
+    // drag & drop support
+    QStringList mimeTypes () const;
+    QMimeData *mimeData(const QModelIndexList &indexes) const;
+    bool dropMimeData(const QMimeData *data, Qt::DropAction action,
+                      int row,int column,const QModelIndex &parent);
 };
 
 #endif

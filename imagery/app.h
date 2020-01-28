@@ -6,20 +6,20 @@
 
 class App : public QApplication
 {
-  Q_OBJECT
-  
-public:
-  App(int &argc,char **argv);
-  ~App();
+    Q_OBJECT
 
-  void openFile(const QString &fileName);
-  
-  static int getNumFileWin();
-  static int getNumDImageWin();
-  
+public:
+    App(int &argc,char **argv);
+    ~App();
+
+    void openFile(const QString &fileName);
+
+    static int getNumFileWin();
+    static int getNumDImageWin();
+
 protected:
-  bool event(QEvent *);
-  void handleFileOpenEvent(QFileOpenEvent *);
+    bool event(QEvent *);
+    void handleFileOpenEvent(QFileOpenEvent *);
 };
 
 #endif

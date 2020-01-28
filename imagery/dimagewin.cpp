@@ -22,7 +22,8 @@
 
 DImageWin::DImageWin(DImage::DiskFormat format, QWidget *parent)
     : MainWin("DImageWin", QRect(300, 100, 200, 300), parent),
-      m_dimage(format) {
+    m_dimage(format) {
+
     QString file, title, id;
     Preferences::getNextImageName(file, title, id);
     m_dimage.setFileName(file);
@@ -34,7 +35,7 @@ DImageWin::DImageWin(DImage::DiskFormat format, QWidget *parent)
 
 DImageWin::DImageWin(const QString &fileName, QWidget *parent)
     : MainWin("DImageWin", QRect(300, 100, 200, 300), parent),
-      m_dimage(fileName) {
+    m_dimage(fileName) {
     init();
 }
 
@@ -76,7 +77,7 @@ void DImageWin::init() {
     layout->addWidget(m_driveStatus, 4, 0, 1, 2);
 
     // setup icon
-    m_fileIcon = style()->standardIcon(QStyle::SP_FileIcon, 0, this);
+    m_fileIcon = style()->standardIcon(QStyle::SP_FileIcon, nullptr, this);
     m_darkFileIcon = QIcon(darkenPixmap(m_fileIcon.pixmap(16, 16)));
 
     QFont font, shiftedFont;
@@ -90,7 +91,7 @@ void DImageWin::init() {
     // connect menu entries
     connect(m_saveImageAction, SIGNAL(triggered()), this, SLOT(saveImage()));
     connect(m_saveImageAsAction, SIGNAL(triggered()), this,
-            SLOT(saveImageAs()));
+        SLOT(saveImageAs()));
 
     connect(m_cutAction, SIGNAL(triggered()), this, SLOT(cut()));
     connect(m_copyAction, SIGNAL(triggered()), this, SLOT(copy()));
@@ -98,23 +99,23 @@ void DImageWin::init() {
     connect(m_deleteAction, SIGNAL(triggered()), this, SLOT(deleteSel()));
 
     connect(m_shiftCharsetAction, SIGNAL(toggled(bool)), this,
-            SLOT(shiftCharset(bool)));
+        SLOT(shiftCharset(bool)));
     connect(m_showCharsetAction, SIGNAL(triggered()), this,
-            SLOT(showCharset()));
+        SLOT(showCharset()));
 
     connect(m_formatDiskAction, SIGNAL(triggered()), this, SLOT(formatDisk()));
     connect(m_addSeparatorAction, SIGNAL(triggered()), this,
-            SLOT(addSeparator()));
+        SLOT(addSeparator()));
     connect(m_mountImageAction, SIGNAL(triggered()), this, SLOT(mountImage()));
     connect(m_runProgramAction, SIGNAL(triggered()), this, SLOT(runProgram()));
 
     connect(m_dirView, SIGNAL(activated(const QModelIndex &)), this,
-            SLOT(activateItem(const QModelIndex &)));
+        SLOT(activateItem(const QModelIndex &)));
 
     // init dialog
-    m_charsetDialog = 0;
-    m_formatImageDialog = 0;
-    m_addSeparatorDialog = 0;
+    m_charsetDialog = nullptr;
+    m_formatImageDialog = nullptr;
+    m_addSeparatorDialog = nullptr;
 }
 
 QPixmap DImageWin::darkenPixmap(const QPixmap &pixmap) {
@@ -202,8 +203,7 @@ void DImageWin::updateDImage() {
         setWindowIcon(QIcon(":/imagery/imagery-16.png"));
     }
     QString title = QFileInfo(m_dimage.fileName()).fileName();
-    if (isDirty)
-        title += " *";
+    if (isDirty) title += " *";
 #ifdef Q_OS_WIN32
     title = "DiskImagery64 - " + title;
 #endif
@@ -235,11 +235,9 @@ void DImageWin::updateDImage() {
 // ----- File Menu -----
 
 bool DImageWin::saveImage() {
-    if (!m_dimage.isFileAvailable()) {
-        return saveImageAs();
-    }
-    if (!m_dimage.isDirty())
-        return true;
+    if (!m_dimage.isFileAvailable()) return saveImageAs();
+    if (!m_dimage.isDirty()) return true;
+
     m_dimage.sync();
     updateDImage();
     return true;
@@ -265,20 +263,18 @@ void DImageWin::closeEvent(QCloseEvent *event) {
         int result = QMessageBox::warning(
             this, tr("Unsaved Image"),
             tr("Disk Image '%1' is not saved!")
-                .arg(QFileInfo(m_dimage.fileName()).fileName()),
+            .arg(QFileInfo(m_dimage.fileName()).fileName()),
             QMessageBox::Save | QMessageBox::Discard | QMessageBox::Cancel,
             QMessageBox::Save);
         if (result == QMessageBox::Save) {
-            if (saveImage())
-                event->accept();
-            else
-                event->ignore();
-        } else if (result == QMessageBox::Discard)
+            if (saveImage()) event->accept();
+            else event->ignore();
+        } else if (result == QMessageBox::Discard) {
             event->accept();
-        else
+        } else {
             event->ignore();
-    } else
-        event->accept();
+        }
+    } else event->accept();
 }
 
 // ----- Edit Menu -----
@@ -292,24 +288,18 @@ void DImageWin::copy() {
     QItemSelectionModel *selModel = m_dirView->selectionModel();
     if (selModel->hasSelection()) {
         QMimeData *data = m_model->copySelection(selModel->selectedRows());
-        if (data != 0) {
-            QApplication::clipboard()->setMimeData(data);
-        }
+        if (data != nullptr) QApplication::clipboard()->setMimeData(data);
     }
 }
 
 void DImageWin::paste() {
     const QMimeData *data = QApplication::clipboard()->mimeData();
-    if (data != 0) {
-        m_model->pasteSelection(data);
-    }
+    if (data != nullptr) m_model->pasteSelection(data);
 }
 
 void DImageWin::deleteSel() {
     QItemSelectionModel *selModel = m_dirView->selectionModel();
-    if (selModel->hasSelection()) {
-        m_model->deleteSelection(selModel->selectedRows());
-    }
+    if (selModel->hasSelection()) m_model->deleteSelection(selModel->selectedRows());
 }
 
 // ----- View Menu -----
@@ -317,12 +307,11 @@ void DImageWin::deleteSel() {
 void DImageWin::shiftCharset(bool on) {
     m_fontShifted = on;
     updateFont();
-    if (m_charsetDialog != 0)
-        showCharset();
+    if (m_charsetDialog != nullptr) showCharset();
 }
 
 void DImageWin::showCharset() {
-    if (m_charsetDialog == 0) {
+    if (m_charsetDialog == nullptr) {
         m_charsetDialog = new QDialog(this, Qt::Tool);
         m_charsetDialog->setWindowIcon(QIcon(":/imagery/imagery-16.png"));
         QVBoxLayout *layout = new QVBoxLayout(m_charsetDialog);
@@ -335,20 +324,19 @@ void DImageWin::showCharset() {
         QString charset;
         for (int i = 0x20; i < 0x80; i++) {
             charset += QChar(i);
-            if (i % 16 == 15)
-                charset += "\n";
+            if (i % 16 == 15) charset += "\n";
         }
         for (int i = 0xa0; i < 0x100; i++) {
             charset += QChar(i);
-            if ((i % 16 == 15) && (i != 0xff))
-                charset += "\n";
+            if ((i % 16 == 15) && (i != 0xff)) charset += "\n";
         }
         m_charsetChars->setText(charset);
     }
 
     m_charsetDialog->setWindowTitle(m_fontShifted
-                                        ? tr("Shifted CBM Charset")
-                                        : tr("Unshifted CBM Charset"));
+        ? tr("Shifted CBM Charset")
+        : tr("Unshifted CBM Charset"));
+
     m_charsetChars->setFont(currentFont());
     m_charsetDialog->show();
 }
@@ -356,7 +344,7 @@ void DImageWin::showCharset() {
 // ----- Tools Menu -----
 
 void DImageWin::formatDisk() {
-    if (m_formatImageDialog == 0) {
+    if (m_formatImageDialog == nullptr) {
         m_formatImageDialog = new QDialog(this, Qt::Sheet);
         m_formatImageDialog->setWindowTitle(tr("Format Disk"));
         m_formatImageDialog->setWindowIcon(QIcon(":/imagery/imagery-16.png"));
@@ -406,7 +394,7 @@ void DImageWin::formatDisk() {
         if ((idSize != 0) && (idSize != 2)) {
             // invalid id
             QMessageBox::warning(this, tr("Format Image"),
-                                 tr("Invalid disk id given!"));
+                tr("Invalid disk id given!"));
         } else {
             // format image
             m_dimage.format(name, id);
@@ -416,7 +404,7 @@ void DImageWin::formatDisk() {
 }
 
 void DImageWin::addSeparator() {
-    if (m_addSeparatorDialog == 0) {
+    if (m_addSeparatorDialog == nullptr) {
         m_addSeparatorDialog = new QDialog(this, Qt::Sheet);
         m_addSeparatorDialog->setWindowTitle(tr("Add Separator"));
         m_addSeparatorDialog->setWindowIcon(QIcon(":/imagery/imagery-16.png"));
@@ -452,8 +440,7 @@ void DImageWin::addSeparator() {
     if (m_addSeparatorDialog->exec() == QDialog::Accepted) {
         QString sep = m_addSeparatorCombo->currentText();
         if (sep == "") {
-            QMessageBox::warning(this, tr("Add Separator"),
-                                 tr("Ignoring empty separator!"));
+            QMessageBox::warning(this, tr("Add Separator"), tr("Ignoring empty separator!"));
         } else {
             // add separator
             CBMFile sepFile(sep, CBMFile::DEL);
@@ -479,22 +466,19 @@ void DImageWin::mountImage() {
 void DImageWin::runProgram() {
     QModelIndexList selection = m_dirView->selectionModel()->selectedRows();
     if (selection.size() != 1) {
-        QMessageBox::warning(
-            this, tr("Run Program"),
+        QMessageBox::warning(this, tr("Run Program"),
             tr("You need to select a single Program before running it!"));
         return;
     }
     if (!saveImage()) {
-        QMessageBox::warning(
-            this, tr("Run Program"),
+        QMessageBox::warning(this, tr("Run Program"),
             tr("You need to save an Image before mounting it!"));
         return;
     }
 
     QString app, mount, run;
     Preferences::getEmulatorDefaults(app, mount, run);
-    QString fileName =
-        m_model->data(m_model->index(selection[0].row(), 0)).toString();
+    QString fileName = m_model->data(m_model->index(selection[0].row(), 0)).toString();
     runEmu(app, run, fileName);
 }
 
@@ -509,8 +493,8 @@ void DImageWin::runEmu(const QString &app, const QString &args,
 
     if (!QProcess::startDetached(app, cmdLine)) {
         QMessageBox::warning(this, tr("Mount Image"),
-                             tr("Cannot run the emulator with:\n") + app +
-                                 "\n" + cmdLine.join(" "));
+            tr("Cannot run the emulator with:\n") + app +
+            "\n" + cmdLine.join(" "));
     }
 }
 
@@ -536,8 +520,7 @@ QString DImageWin::replaceArgTags(const QString &str, const QString &fileName) {
                 }
                 // program name in unicode/ascii
                 else if (nextChar == 'p') {
-                    result += Petscii::convertToAscii(fileName,
-                                                      Petscii::VALID_PATTERN);
+                    result += Petscii::convertToAscii(fileName, Petscii::VALID_PATTERN);
                     i++;
                     replaced = true;
                 }
@@ -549,19 +532,17 @@ QString DImageWin::replaceArgTags(const QString &str, const QString &fileName) {
                 }
             }
         }
-        if (!replaced)
-            result += str[i];
+        if (!replaced) result += str[i];
     }
     return result;
 }
 
 bool DImageWin::getCurrentFile(CBMFile &file) {
     QModelIndexList selection = m_dirView->selectionModel()->selectedRows();
-    if (selection.size() != 1) {
-        return false;
-    }
-    if (!m_model->fileForIndex(selection[0], file))
-        return false;
+
+    if (selection.size() != 1) return false;
+    if (!m_model->fileForIndex(selection[0], file)) return false;
+
     return m_dimage.readFile(file);
 }
 
@@ -571,37 +552,30 @@ bool DImageWin::getCurrentFiles(CBMFileList &files) {
         // read full directory of image
         m_dimage.readDirectory(files);
     } else {
-        // copy disk name
         QString name, id;
-        m_dimage.diskTitle(name, id);
+        m_dimage.diskTitle(name, id);   // copy disk name
         files.setTitle(name, id);
-        // files from selection
-        files.clear();
+
+        files.clear();                  // files from selection
         for (int i = 0; i < selection.size(); i++) {
             CBMFile file;
-            if (!m_model->fileForIndex(selection[i], file)) {
-                return false;
-            }
+            if (!m_model->fileForIndex(selection[i], file)) return false;
             files << file;
         }
     }
-    for (int i = 0; i < files.size(); i++) {
-        if (!m_dimage.readFile(files[i]))
-            return false;
-    }
+    for (int i = 0; i < files.size(); i++)
+        if (!m_dimage.readFile(files[i])) return false;
+
     return true;
 }
 
 void DImageWin::activateItem(const QModelIndex &index) {
     // click on first column edist name
-    if (index.column() == 0)
-        return;
+    if (index.column() == 0) return;
 
     CBMFile file;
-    if (!m_model->fileForIndex(index, file))
-        return;
-    if (!m_dimage.readFile(file))
-        return;
+    if (!m_model->fileForIndex(index, file)) return;
+    if (!m_dimage.readFile(file)) return;
 
     operateOnFile(file);
 }

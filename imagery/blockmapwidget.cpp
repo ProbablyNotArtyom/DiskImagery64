@@ -5,7 +5,8 @@
 
 BlockMapWidget::BlockMapWidget(QWidget *parent)
     : QWidget(parent), m_maxSectors(0), m_numTracks(0), m_numBlocks(0),
-      m_clearColor(Qt::black), m_defaultBlockSize(8, 8) {
+    m_clearColor(Qt::black), m_defaultBlockSize(8, 8) {
+
     setBackgroundRole(QPalette::Dark);
     setAutoFillBackground(true);
 }
@@ -36,8 +37,7 @@ void BlockMapWidget::setBlockMap(const BlockMap &blockMap) {
     int sum = 0;
     for (int t = 0; t < m_numTracks; t++) {
         int sectors = m_blockMap[t];
-        if (sectors > m_maxSectors)
-            m_maxSectors = sectors;
+        if (sectors > m_maxSectors) m_maxSectors = sectors;
         m_offsetMap[t] = sum;
         sum += sectors;
     }
@@ -54,9 +54,9 @@ QColor BlockMapWidget::blockColor(int track, int sector) {
 }
 
 void BlockMapWidget::clear() {
-    for (int b = 0; b < m_numBlocks; b++) {
+    for (int b = 0; b < m_numBlocks; b++)
         m_colorMap[b] = m_clearColor;
-    }
+
     update();
 }
 
@@ -83,21 +83,18 @@ void BlockMapWidget::paintEvent(QPaintEvent *event) {
 }
 
 void BlockMapWidget::resizeEvent(QResizeEvent *event) {
-    QSize size = event->size();
-    // update block size
     int bw, bh;
-    if (m_numTracks == 0)
-        bw = size.width();
-    else
-        bw = (size.width() - 1) / m_numTracks;
-    if (m_maxSectors == 0)
-        bh = size.height();
-    else
-        bh = (size.height() - 1) / m_maxSectors;
-    if (bw < 2)
-        bw = 2;
-    if (bh < 2)
-        bh = 2;
+    QSize size = event->size();
+
+    // update block size
+    if (m_numTracks == 0) bw = size.width();
+    else bw = (size.width() - 1) / m_numTracks;
+
+    if (m_maxSectors == 0) bh = size.height();
+    else bh = (size.height() - 1) / m_maxSectors;
+
+    if (bw < 2) bw = 2;
+    if (bh < 2) bh = 2;
     m_blockSize = QSize(bw, bh);
 }
 

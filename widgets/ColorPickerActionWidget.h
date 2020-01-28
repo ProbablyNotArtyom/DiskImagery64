@@ -22,28 +22,7 @@
 * THE SOFTWARE.
 */
 
-#ifndef COLOR_PICKER_TOOL_BUTTON_H
-#define COLOR_PICKER_TOOL_BUTTON_H
+#ifndef COLOR_PICKER_ACTION_WIDGET_H
+#define COLOR_PICKER_ACTION_WIDGET_H
 
-#include <QToolButton>
-#include <QColor>
-
-QT_FORWARD_DECLARE_CLASS(QMenu)
-
-class ColorPickerButton: public QToolButton {
-    Q_OBJECT
-public:
-    explicit ColorPickerButton(QWidget * parent = 0);
-
-Q_SIGNALS:
-    void colorSelected(QColor color);
-    void rejected();
-
-private Q_SLOTS:
-    void onColorDialogAction();
-
-private:
-    QMenu * m_menu;
-};
-
-#endif // COLOR_PICKER_TOOL_BUTTON_H
+#endif // COLOR_PICKER_ACTION_WIDGET_H

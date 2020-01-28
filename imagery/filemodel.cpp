@@ -15,8 +15,8 @@ FileModel::~FileModel() {}
 Qt::ItemFlags FileModel::flags(const QModelIndex &index) const {
     Qt::ItemFlags flags = QDirModel::flags(index);
     QFileInfo info = fileInfo(index);
-    if (info.isDir())
-        flags |= Qt::ItemIsDropEnabled;
+
+    if (info.isDir()) flags |= Qt::ItemIsDropEnabled;
     else if (info.isFile()) {
         flags |= Qt::ItemIsDragEnabled;
 
@@ -40,15 +40,13 @@ QMimeData *FileModel::copySelection(const QModelIndexList &indexes) const {
     foreach (const QModelIndex &index, indexes) {
         if (index.column() == 0) {
             CBMFile file;
-            if (fileForIndex(index, file)) {
-                files << file;
-            }
+            if (fileForIndex(index, file)) files << file;
         }
     }
 
     QMimeData *data = files.convertToMimeData();
 
-    if (data != 0) {
+    if (data != nullptr) {
         // add list of file urls
         QList<QUrl> urls;
         foreach (const QModelIndex &index, indexes) {
@@ -62,10 +60,8 @@ QMimeData *FileModel::copySelection(const QModelIndexList &indexes) const {
 }
 
 bool FileModel::fileForIndex(const QModelIndex &index, CBMFile &cbmFile) const {
-    if (!index.isValid())
-        return false;
+    if (!index.isValid()) return false;
     QString filePath = this->filePath(index);
-
     return cbmFile.fromLocalFile(filePath);
 }
 
@@ -73,8 +69,7 @@ QMimeData *FileModel::mimeData(const QModelIndexList &indexes) const {
     return copySelection(indexes);
 }
 
-bool FileModel::pasteSelection(const QMimeData *data,
-                               const QModelIndex &parent) {
+bool FileModel::pasteSelection(const QMimeData *data, const QModelIndex &parent) {
     CBMFileList files;
 
     // parse cbm files from mime blob
@@ -82,16 +77,15 @@ bool FileModel::pasteSelection(const QMimeData *data,
         qDebug("no cbm files dropped");
         return false;
     }
-
     // check drop directory
     if (!parent.isValid()) {
         qDebug("no valid index");
         return false;
     }
+
     QString dirPath = this->filePath(parent);
     QDir dir(dirPath);
-    if (!dir.exists())
-        return false;
+    if (!dir.exists()) return false;
 
     // write files to directory
     QStringList errorFiles;
@@ -101,8 +95,8 @@ bool FileModel::pasteSelection(const QMimeData *data,
         QString filePath = dir.filePath(fileName);
         if (!file.toLocalFile(filePath)) {
             errorFiles << tr("Can't store file '%1' in '%2'")
-                              .arg(file.name())
-                              .arg(dir.path());
+            .arg(file.name())
+            .arg(dir.path());
         }
     }
     refresh(parent);
@@ -110,15 +104,15 @@ bool FileModel::pasteSelection(const QMimeData *data,
     // report errors while dropping
     if (!errorFiles.empty()) {
         QString message = tr("Erros occured:") + "\n" + errorFiles.join("\n");
-        QMessageBox::warning(0, tr("Error"), message);
+        QMessageBox::warning(nullptr, tr("Error"), message);
     }
 
     return true;
 }
 
 bool FileModel::dropMimeData(const QMimeData *data, Qt::DropAction /*action*/,
-                             int /*row*/, int /*column*/,
-                             const QModelIndex &parent) {
+    int /*row*/, int /*column*/, const QModelIndex &parent) {
+
     return pasteSelection(data, parent);
 }
 
@@ -134,8 +128,7 @@ bool FileModel::deleteSelection(const QModelIndexList &indexes) {
             if (info.isFile()) {
                 deletePaths << filePath;
                 QModelIndex p = parent(index);
-                if (p.isValid())
-                    refreshParents << p;
+                if (p.isValid()) refreshParents << p;
             }
         }
     }
@@ -146,6 +139,8 @@ bool FileModel::deleteSelection(const QModelIndexList &indexes) {
             allOk = allOk && ok;
         }
     }
-    foreach (const QModelIndex &index, refreshParents) { refresh(index); }
+    foreach (const QModelIndex &index, refreshParents)
+        refresh(index);
+
     return allOk;
 }

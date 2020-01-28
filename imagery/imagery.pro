@@ -10,10 +10,9 @@ CONFIG += qt create_prl link_prl
 QT += network
 
 HEADERS += dimagemodel.h   dimagewin.h   filewin.h   filemodel.h \
-    ColorPickerActionWidget.h \
-    ColorPickerButton.h
+	opencbmwin.h
 SOURCES += dimagemodel.cpp dimagewin.cpp filewin.cpp filemodel.cpp \
-    ColorPickerButton.cpp
+	opencbmwin.cpp
 HEADERS += netwin.h   blockmapwidget.h   copydialog.h
 SOURCES += netwin.cpp blockmapwidget.cpp copydialog.cpp
 HEADERS += mainwin.h   preferences.h   app.h   version.h
@@ -21,14 +20,15 @@ SOURCES += mainwin.cpp preferences.cpp app.cpp main.cpp
 
 RESOURCES = ../icons/icons.qrc
 
-INCLUDEPATH += ../base ../net
+INCLUDEPATH += ../base ../net ../widgets
 HEADERS += ../base/petscii.h ../base/cbmfile.h ../base/dimage.h
 HEADERS += ../base/rawdir.h
 HEADERS += ../net/nethost.h ../net/netservice.h ../net/codenet.h
+HEADERS += ../widgets/ColorPickerButton.h ../widgets/ColorPickerActionWidget.h
 HEADERS += ../net/netdrive.h ../net/netdrivedevice.h
 
-LIBS += -L../BUILD -lnet -lbase
-POST_TARGETDEPS += ../BUILD/libbase.a ../BUILD/libnet.a
+LIBS += -L../BUILD -lnet -lbase -lwidgets
+POST_TARGETDEPS += ../BUILD/libbase.a ../BUILD/libnet.a ../BUILD/libwidgets.a
 
 mac {
  ICON = ../icons/imagery/imagery.icns 

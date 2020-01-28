@@ -3,7 +3,7 @@
 #include "filewin.h"
 #include "version.h"
 
-NetWin *MainWin::g_netWin = 0;
+NetWin *MainWin::g_netWin = nullptr;
 
 MainWin::MainWin(const QString &winClass, const QRect &defGeo, QWidget *parent)
     : QMainWindow(parent), m_winClass(winClass), m_defGeo(defGeo) {
@@ -15,10 +15,10 @@ MainWin::MainWin(const QString &winClass, const QRect &defGeo, QWidget *parent)
 
     loadSettings();
 
-    m_preferencesDialog = 0;
+    m_preferencesDialog = nullptr;
 
     // first main win create network window
-    if (g_netWin == 0) {
+    if (g_netWin == nullptr) {
         g_netWin = new NetWin;
     }
     connect(qApp, SIGNAL(lastWindowClosed()), this, SLOT(lastWindowClosed()));
@@ -31,9 +31,9 @@ MainWin::~MainWin() {
 
 void MainWin::lastWindowClosed() {
     // last main win deletes network window
-    if (g_netWin != 0) {
+    if (g_netWin != nullptr) {
         delete g_netWin;
-        g_netWin = 0;
+        g_netWin = nullptr;
     }
 }
 
@@ -81,8 +81,7 @@ void MainWin::initActions() {
     m_deleteAction->setShortcuts(delSeq);
 
     m_preferencesAction = new QAction(tr("&Preferences"), this);
-    connect(m_preferencesAction, SIGNAL(triggered()), this,
-            SLOT(preferences()));
+    connect(m_preferencesAction, SIGNAL(triggered()), this, SLOT(preferences()));
 
     // ----- View Menu -----
     m_shiftCharsetAction = new QAction(tr("&Shift Charset"), this);
@@ -109,13 +108,11 @@ void MainWin::initActions() {
     // ----- Network Menu -----
     m_netRunProgramAction = new QAction(tr("&Run Program"), this);
     m_netRunProgramAction->setShortcut(tr("Ctrl+Shift+R"));
-    connect(m_netRunProgramAction, SIGNAL(triggered()), this,
-            SLOT(netRunProgram()));
+    connect(m_netRunProgramAction, SIGNAL(triggered()), this, SLOT(netRunProgram()));
 
     m_netShareFilesAction = new QAction(tr("&Share Files in Netdrive"), this);
     m_netShareFilesAction->setShortcut(tr("Ctrl+Shift+M"));
-    connect(m_netShareFilesAction, SIGNAL(triggered()), this,
-            SLOT(netShareFiles()));
+    connect(m_netShareFilesAction, SIGNAL(triggered()), this, SLOT(netShareFiles()));
 
     m_netShowLogAction = new QAction(tr("&Show Log Window"), this);
     m_netShowLogAction->setShortcut(tr("Ctrl+L"));
@@ -123,40 +120,31 @@ void MainWin::initActions() {
 
     // WarpCopy
     m_netWCStartServerAction = new QAction(tr("Start WarpCopy"), this);
-    connect(m_netWCStartServerAction, SIGNAL(triggered()), this,
-            SLOT(netWCStartServer()));
+    connect(m_netWCStartServerAction, SIGNAL(triggered()), this, SLOT(netWCStartServer()));
 
     m_netWCWarpReadDiskAction = new QAction(tr("Read Disk (Warp)"), this);
-    connect(m_netWCWarpReadDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCWarpReadDisk()));
+    connect(m_netWCWarpReadDiskAction, SIGNAL(triggered()), this, SLOT(netWCWarpReadDisk()));
 
     m_netWCWarpWriteDiskAction = new QAction(tr("Write Disk (Warp)"), this);
-    connect(m_netWCWarpWriteDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCWarpWriteDisk()));
+    connect(m_netWCWarpWriteDiskAction, SIGNAL(triggered()), this, SLOT(netWCWarpWriteDisk()));
 
     m_netWCReadDiskAction = new QAction(tr("Read Disk (Slow)"), this);
-    connect(m_netWCReadDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCReadDisk()));
+    connect(m_netWCReadDiskAction, SIGNAL(triggered()), this, SLOT(netWCReadDisk()));
 
     m_netWCWriteDiskAction = new QAction(tr("Write Disk (Slow)"), this);
-    connect(m_netWCWriteDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCWriteDisk()));
+    connect(m_netWCWriteDiskAction, SIGNAL(triggered()), this, SLOT(netWCWriteDisk()));
 
     m_netWCFormatDiskAction = new QAction(tr("Format Disk"), this);
-    connect(m_netWCFormatDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCFormatDisk()));
+    connect(m_netWCFormatDiskAction, SIGNAL(triggered()), this, SLOT(netWCFormatDisk()));
 
     m_netWCVerifyDiskAction = new QAction(tr("Verify Disk"), this);
-    connect(m_netWCVerifyDiskAction, SIGNAL(triggered()), this,
-            SLOT(netWCVerifyDisk()));
+    connect(m_netWCVerifyDiskAction, SIGNAL(triggered()), this, SLOT(netWCVerifyDisk()));
 
     m_netWCSendDOSCommandAction = new QAction(tr("Send DOS Command"), this);
-    connect(m_netWCSendDOSCommandAction, SIGNAL(triggered()), this,
-            SLOT(netWCSendDOSCommand()));
+    connect(m_netWCSendDOSCommandAction, SIGNAL(triggered()), this, SLOT(netWCSendDOSCommand()));
 
     m_netWCGetDriveStatusAction = new QAction(tr("Get Drive Status"), this);
-    connect(m_netWCGetDriveStatusAction, SIGNAL(triggered()), this,
-            SLOT(netWCGetDriveStatus()));
+    connect(m_netWCGetDriveStatusAction, SIGNAL(triggered()), this, SLOT(netWCGetDriveStatus()));
 
     // ----- Help Menu ------
     m_aboutAction = new QAction(tr("&About"), this);
@@ -230,8 +218,7 @@ void MainWin::newBrowser() {
 }
 
 void MainWin::openImage() {
-    QString fileName =
-        QFileDialog::getOpenFileName(this, tr("Open Image File"));
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open Image File"));
     if (fileName != "") {
         DImage::DiskFormat format = DImage::determineDiskFormat(fileName);
         if (format != DImage::INVALID) {
@@ -257,12 +244,12 @@ void MainWin::about() {
         "Contact: <tt>chris@vogelgsang.org</tt><br>"
         "Homepage: <a "
         "href=\"http://www.lallafa.de/blog\">http://www.lallafa.de/blog</a><br>"
-		"<br>"
-		"<small>Maintained by Carson Herrington<br>"
+        "<br>"
+        "<small>Maintained by Carson Herrington<br>"
         "Contact: <tt>notartyomowo@gmail.com</tt><br>"
         "Homepage: <a "
         "href=\"http://www.notartyoms-box.net\">http://www..notartyoms-box.net</a><br>"
-		"<br>"
+        "<br>"
         "Licensed under the GNU Public License V2<br><br>"
         "Uses: diskimage D64/D71/D81 library<br>"
         "Copyright (c) 2003-2006, Per Olofsson<br>"
@@ -277,13 +264,9 @@ void MainWin::about() {
 }
 
 void MainWin::preferences() {
-    if (m_preferencesDialog == 0) {
-        m_preferencesDialog = new Preferences(this);
-    }
+    if (m_preferencesDialog == nullptr) m_preferencesDialog = new Preferences(this);
     m_preferencesDialog->load();
-    if (m_preferencesDialog->exec() == QDialog::Accepted) {
-        m_preferencesDialog->save();
-    }
+    if (m_preferencesDialog->exec() == QDialog::Accepted) m_preferencesDialog->save();
 }
 
 void MainWin::operateOnFile(const CBMFile &file) {
@@ -298,8 +281,7 @@ void MainWin::netShowLog() { g_netWin->show(); }
 void MainWin::netRunProgram() {
     CBMFile file;
     if (!getCurrentFile(file)) {
-        QMessageBox::warning(this, tr("Net Run Program"),
-                             tr("Please select a file to run!"));
+        QMessageBox::warning(this, tr("Net Run Program"), tr("Please select a file to run!"));
         return;
     }
     return netRunFile(file);
@@ -309,13 +291,11 @@ void MainWin::netRunFile(const CBMFile &file) {
     quint16 addr;
     QByteArray data;
     if (!file.prgRunAddress(addr) || !file.prgData(data)) {
-        QMessageBox::warning(this, tr("Net Run Program"),
-                             tr("Cannot query PRG file!"));
+        QMessageBox::warning(this, tr("Net Run Program"), tr("Cannot query PRG file!"));
         return;
     }
     if (data.size() == 0) {
-        QMessageBox::warning(this, tr("Net Run Program"),
-                             tr("Can not run empty PRG file!"));
+        QMessageBox::warning(this, tr("Net Run Program"), tr("Can not run empty PRG file!"));
         return;
     }
 
@@ -326,8 +306,7 @@ void MainWin::netRunFile(const CBMFile &file) {
 void MainWin::netShareFiles() {
     CBMFileList files;
     if (!getCurrentFiles(files)) {
-        QMessageBox::warning(this, tr("Net Share Files"),
-                             tr("Please select some files first!"));
+        QMessageBox::warning(this, tr("Net Share Files"), tr("Please select some files first!"));
         return;
     }
 
@@ -345,8 +324,7 @@ void MainWin::netWCStartServer() {
     // read prg
     CBMFile file;
     if (!file.fromLocalFile(wcPrg)) {
-        QMessageBox::warning(this, tr("Start WarpCopy"),
-                             tr("Can't access WarpCopy PRG:\n%1").arg(wcPrg));
+        QMessageBox::warning(this, tr("Start WarpCopy"), tr("Can't access WarpCopy PRG:\n%1").arg(wcPrg));
         return;
     }
 
@@ -354,8 +332,7 @@ void MainWin::netWCStartServer() {
     if (wcPatch) {
         QByteArray data = file.data();
         if (!patchWarpCopy(data)) {
-            QMessageBox::warning(this, tr("Start WarpCopy"),
-                                 tr("Unable to patch WarpCopy PRG!"));
+            QMessageBox::warning(this, tr("Start WarpCopy"), tr("Unable to patch WarpCopy PRG!"));
             return;
         }
         file.setData(data);
@@ -367,34 +344,30 @@ void MainWin::netWCStartServer() {
 
 bool MainWin::patchWarpCopy(QByteArray &data) {
     // warp copy original address:
-    const char oldC64[4] = {(char)192, (char)168, 0, 64};
+    const char oldC64[4] = {char(192), char(168), 0, 64};
 
     // new addresses:
     AddrPair addrPair;
     Preferences::getNetworkDefaults(addrPair);
     char newC64[4];
     quint32 addrC64 = addrPair.c64Addr.toIPv4Address();
-    newC64[0] = (char)((addrC64 >> 24) & 0xff);
-    newC64[1] = (char)((addrC64 >> 16) & 0xff);
-    newC64[2] = (char)((addrC64 >> 8) & 0xff);
-    newC64[3] = (char)(addrC64 & 0xff);
+    newC64[0] = char((addrC64 >> 24) & 0xff);
+    newC64[1] = char((addrC64 >> 16) & 0xff);
+    newC64[2] = char((addrC64 >> 8) & 0xff);
+    newC64[3] = char(addrC64 & 0xff);
 
-    if (data.size() < 4)
-        return false;
+    if (data.size() < 4) return false;
 
     int foundC64 = 0;
     int i, j;
     for (i = 0; i < data.size() - 4; i++) {
         int gotC64 = 0;
         for (j = 0; j < 4; j++) {
-            if (data[i + j] == oldC64[j])
-                gotC64++;
+            if (data[i + j] == oldC64[j]) gotC64++;
         }
         if (gotC64 == 4) {
             foundC64++;
-            for (j = 0; j < 4; j++) {
-                data[i + j] = newC64[j];
-            }
+            for (j = 0; j < 4; j++) data[i + j] = newC64[j];
         }
     }
     return (foundC64 == 1);
@@ -414,9 +387,8 @@ void MainWin::netWCWarpReadDisk() {
 
 void MainWin::netWCWarpWriteDisk() {
     DImage *image = getEmbeddedDImage();
-    if (image == 0) {
-        QMessageBox::warning(this, tr("Warp Write Disk"),
-                             tr("No Image to write found!"));
+    if (image == nullptr) {
+        QMessageBox::warning(this, tr("Warp Write Disk"), tr("No Image to write found!"));
         return;
     }
 
@@ -438,9 +410,8 @@ void MainWin::netWCReadDisk() {
 
 void MainWin::netWCWriteDisk() {
     DImage *image = getEmbeddedDImage();
-    if (image == 0) {
-        QMessageBox::warning(this, tr("Warp Write Disk"),
-                             tr("No Image to write found!"));
+    if (image == nullptr) {
+        QMessageBox::warning(this, tr("Warp Write Disk"), tr("No Image to write found!"));
         return;
     }
 
@@ -451,18 +422,17 @@ void MainWin::netWCWriteDisk() {
 // --- other wc ops ---
 
 void MainWin::netWCFormatDisk() {
-    QString nameId =
-        QInputDialog::getText(0, tr("Format Disk"), tr("Name,(Id):"));
-    if (nameId == "")
-        return;
+    QString nameId = QInputDialog::getText(nullptr, tr("Format Disk"), tr("Name,(Id):"));
+
+    if (nameId == "") return;
     QStringList items = nameId.split(",");
+
     int num = items.size();
-    if (num == 0)
-        return;
+    if (num == 0) return;
+
     QString name, id;
     name = items.at(0);
-    if (num > 1)
-        id = items.at(1);
+    if (num > 1) id = items.at(1);
 
     netShowLog();
     g_netWin->formatDisk(name, id);
@@ -474,10 +444,8 @@ void MainWin::netWCVerifyDisk() {
 }
 
 void MainWin::netWCSendDOSCommand() {
-    QString cmd = QInputDialog::getText(0, tr("Send DOS Command"),
-                                        tr("CBM DOS Command:"));
-    if (cmd == "")
-        return;
+    QString cmd = QInputDialog::getText(nullptr, tr("Send DOS Command"), tr("CBM DOS Command:"));
+    if (cmd == "") return;
 
     netShowLog();
     g_netWin->sendDOSCommand(cmd);
@@ -496,7 +464,6 @@ void MainWin::saveSettings() {
 
     // geometry
     settings.setValue("geometry", geometry());
-
     settings.endGroup();
 }
 

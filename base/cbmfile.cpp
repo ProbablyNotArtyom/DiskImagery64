@@ -19,30 +19,20 @@ CBMFile::CBMFile(const CBMFile &file)
 CBMFile::~CBMFile() {}
 
 QString CBMFile::convertTypeToString() const {
-    const char *types[8] = {"DEL", "SEQ", "PRG", "USR",
-                            "REL", "CBM", "DIR", "???"};
+    const char *types[8] = {"DEL", "SEQ", "PRG", "USR", "REL", "CBM", "DIR", "???"};
     return types[m_type];
 }
 
 bool CBMFile::parseTypeFromString(const QString &typeName) {
-    if (typeName == "DEL")
-        m_type = DEL;
-    else if (typeName == "SEQ")
-        m_type = SEQ;
-    else if (typeName == "PRG")
-        m_type = PRG;
-    else if (typeName == "USR")
-        m_type = USR;
-    else if (typeName == "REL")
-        m_type = REL;
-    else if (typeName == "CBM")
-        m_type = CBM;
-    else if (typeName == "DIR")
-        m_type = DIR;
-    else if (typeName == "???")
-        m_type = UNKNOWN;
-    else
-        return false;
+    if (typeName == "DEL") m_type = DEL;
+    else if (typeName == "SEQ") m_type = SEQ;
+    else if (typeName == "PRG") m_type = PRG;
+    else if (typeName == "USR") m_type = USR;
+    else if (typeName == "REL") m_type = REL;
+    else if (typeName == "CBM") m_type = CBM;
+    else if (typeName == "DIR") m_type = DIR;
+    else if (typeName == "???") m_type = UNKNOWN;
+    else return false;
     return true;
 }
 
@@ -53,32 +43,24 @@ QString CBMFile::convertTypeFlagsToString() const {
 }
 
 bool CBMFile::parseTypeFlagsFromString(const QString &str) {
-    if (str.size() != 5)
-        return false;
+    if (str.size() != 5) return false;
 
     QChar closedFlag = str[0];
-    if (closedFlag == ' ')
-        m_closed = true;
-    else if (closedFlag == '*')
-        m_closed = false;
-    else
-        return false;
+    if (closedFlag == ' ') m_closed = true;
+    else if (closedFlag == '*') m_closed = false;
+    else return false;
 
     QChar lockedFlag = str[4];
-    if (lockedFlag == '<')
-        m_locked = true;
-    else if (lockedFlag == ' ')
-        m_locked = false;
-    else
-        return false;
+    if (lockedFlag == '<') m_locked = true;
+    else if (lockedFlag == ' ') m_locked = false;
+    else return false;
 
     QString typeName = str.mid(1, 3);
     return parseTypeFromString(typeName);
 }
 
 QString CBMFile::convertToAsciiName() const {
-    QString asciiName =
-        Petscii::convertToAscii(m_name, Petscii::VALID_FILENAME);
+    QString asciiName = Petscii::convertToAscii(m_name, Petscii::VALID_FILENAME);
     QString ext = convertTypeFlagsToString().mid(1, 3);
     QString asciiExt = Petscii::convertToAscii(ext, Petscii::VALID_FILENAME);
     return asciiName + "." + asciiExt;
@@ -101,25 +83,20 @@ void CBMFile::parseFromAsciiName(const QString &fileName, Type defType) {
 }
 
 bool CBMFile::prgRunAddress(quint16 &addr) const {
-    if (type() != PRG)
-        return false;
-    if (m_data.size() < 2)
-        return false;
+    if (type() != PRG) return false;
+    if (m_data.size() < 2) return false;
     const char *data = m_data.constData();
-    addr = (quint16)data[1] << 8 | (quint16)data[0];
+    addr = quint16(data[1] << 8) | quint16(data[0]);
     return true;
 }
 
 bool CBMFile::prgData(QByteArray &data) const {
-    if (type() != PRG)
-        return false;
-    if (m_data.size() < 2)
-        return false;
+    if (type() != PRG) return false;
+    if (m_data.size() < 2) return false;
 
     int size = m_data.size() - 2;
     data.resize(size);
-    for (int i = 0; i < size; i++)
-        data[i] = m_data[i + 2];
+    for (int i = 0; i < size; i++) data[i] = m_data[i + 2];
     return true;
 }
 
@@ -135,8 +112,7 @@ bool CBMFile::fromLocalFile(const QString &filePath) {
         if (file.open(QIODevice::ReadOnly)) {
             m_data = file.readAll();
 
-            qDebug("read %d bytes from '%s'", m_data.size(),
-                   filePath.toLatin1().data());
+            qDebug("read %d bytes from '%s'", m_data.size(), filePath.toLatin1().data());
 
             // make cbm file
             parseFromAsciiName(info.fileName());
@@ -153,8 +129,7 @@ bool CBMFile::toLocalFile(const QString &filePath) const {
     if (file.open(QIODevice::WriteOnly)) {
         size = file.write(m_data);
         file.close();
-    } else
-        return false;
+    } else return false;
 
     qDebug("wrote %d bytes to '%s'", m_data.size(), filePath.toLatin1().data());
 
@@ -189,8 +164,7 @@ QMimeData *CBMFileList::convertToMimeData() {
         stream << file.name() << typeFlags << file.data();
     }
 
-    qDebug("CBMFileList: %d bytes mime data created for %d files",
-           buffer.size(), numFiles);
+    qDebug("CBMFileList: %d bytes mime data created for %d files", buffer.size(), numFiles);
     QMimeData *mimeData = new QMimeData;
     mimeData->setData(mimeType(), buffer);
 
@@ -200,9 +174,7 @@ QMimeData *CBMFileList::convertToMimeData() {
 bool CBMFileList::parseFromMimeData(const QMimeData *mimeData) {
     if (!mimeData->hasFormat(mimeType())) {
         // allow urls
-        if (mimeData->hasUrls()) {
-            return parseFromUrls(mimeData->urls());
-        }
+        if (mimeData->hasUrls()) return parseFromUrls(mimeData->urls());
         qDebug("CBMFileList: wrong mime type!");
         return false;
     }
@@ -224,8 +196,7 @@ bool CBMFileList::parseFromMimeData(const QMimeData *mimeData) {
         QByteArray data;
         stream >> name >> typeFlags >> data;
         CBMFile file(name, CBMFile::PRG, data);
-        if (!file.parseTypeFlagsFromString(typeFlags))
-            return false;
+        if (!file.parseTypeFlagsFromString(typeFlags)) return false;
         (*this) << file;
     }
 
@@ -237,8 +208,7 @@ bool CBMFileList::parseFromUrls(const QList<QUrl> &urls) {
         QString filePath = url.toLocalFile();
         CBMFile file;
         qDebug("CBMFileList: parseURL '%s'", filePath.toLatin1().data());
-        if (!file.fromLocalFile(filePath))
-            return false;
+        if (!file.fromLocalFile(filePath)) return false;
         (*this) << file;
     }
     return true;
@@ -246,8 +216,7 @@ bool CBMFileList::parseFromUrls(const QList<QUrl> &urls) {
 
 bool CBMFileList::hasFile(const CBMFile &file) const {
     foreach (const CBMFile &f, *this) {
-        if ((f.name() == file.name()) && (f.type() == file.type()))
-            return true;
+        if ((f.name() == file.name()) && (f.type() == file.type())) return true;
     }
     return false;
 }

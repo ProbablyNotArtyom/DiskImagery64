@@ -22,10 +22,30 @@
 * THE SOFTWARE.
 */
 
-#ifndef COLOR_PICKER_ACTION_WIDGET_H
-#define COLOR_PICKER_ACTION_WIDGET_H
+#ifndef COLOR_PICKER_TOOL_BUTTON_H
+#define COLOR_PICKER_TOOL_BUTTON_H
 
 #include <QWidgetAction>
+#include <QToolButton>
+#include <QColor>
+
+QT_FORWARD_DECLARE_CLASS(QMenu)
+
+class ColorPickerButton: public QToolButton {
+    Q_OBJECT
+public:
+    explicit ColorPickerButton(QWidget * parent = nullptr);
+
+Q_SIGNALS:
+    void colorSelected(QColor color);
+    void rejected();
+
+private:
+    void onColorDialogAction();
+
+private:
+    QMenu * m_menu;
+};
 
 QT_FORWARD_DECLARE_CLASS(QColorDialog)
 
@@ -46,4 +66,4 @@ private:
     QColorDialog * m_colorDialog;
 };
 
-#endif // COLOR_PICKER_ACTION_WIDGET_H
+#endif // COLOR_PICKER_TOOL_BUTTON_H

@@ -7,7 +7,7 @@
 #include <QTextEdit>
 #include <QToolButton>
 
-NetWin::NetWin(QWidget *parent) : QDialog(parent, Qt::Tool), m_copyDialog(0) {
+NetWin::NetWin(QWidget *parent) : QDialog(parent, Qt::Tool), m_copyDialog(nullptr) {
     setWindowTitle("DiskImagery64: " + tr("Network"));
     QGridLayout *layout = new QGridLayout(this);
 
@@ -42,8 +42,7 @@ NetWin::NetWin(QWidget *parent) : QDialog(parent, Qt::Tool), m_copyDialog(0) {
 }
 
 NetWin::~NetWin() {
-    if (m_copyDialog != 0)
-        delete m_copyDialog;
+    if (m_copyDialog != nullptr) delete m_copyDialog;
 
     saveSettings();
     stopNet();
@@ -73,10 +72,8 @@ void NetWin::loadSettings() {
     resize(rect.size());
     // visible
     bool visible = settings.value("visible", false).toBool();
-    if (visible)
-        show();
-    else
-        hide();
+    if (visible) show();
+    else hide();
 
     settings.endGroup();
 }
@@ -87,16 +84,15 @@ void NetWin::logMessage(const QString &msg) {
     QDateTime now = QDateTime::currentDateTime();
     QLocale locale;
     QString header = locale.toString(now.date(), QLocale::ShortFormat) + " " +
-                     locale.toString(now.time(), QLocale::ShortFormat) + " ";
+        locale.toString(now.time(), QLocale::ShortFormat) + " ";
+
     m_logView->append(header + msg);
 }
 
 void NetWin::logService(NetService *service) {
-    connect(service, SIGNAL(networkEvent(const QString &)), this,
-            SLOT(logMessage(const QString &)));
+    connect(service, SIGNAL(networkEvent(const QString &)), this, SLOT(logMessage(const QString &)));
     connect(service, SIGNAL(sentPacket(int)), this, SLOT(reportOutPacket(int)));
-    connect(service, SIGNAL(receivedPacket(int)), this,
-            SLOT(reportInPacket(int)));
+    connect(service, SIGNAL(receivedPacket(int)), this, SLOT(reportInPacket(int)));
 }
 
 void NetWin::resetCounters() {
@@ -109,10 +105,10 @@ void NetWin::resetCounters() {
 
 void NetWin::updateCounters() {
     QString inMsg;
-    inMsg.sprintf("In: %d/%d bytes", m_packetsIn, m_packetsInSize);
+    inMsg.asprintf("In: %d/%d bytes", m_packetsIn, m_packetsInSize);
     m_packetsInLabel->setText(inMsg);
     QString outMsg;
-    outMsg.sprintf("Out: %d/%d bytes", m_packetsOut, m_packetsOutSize);
+    outMsg.asprintf("Out: %d/%d bytes", m_packetsOut, m_packetsOutSize);
     m_packetsOutLabel->setText(outMsg);
 }
 
@@ -131,32 +127,22 @@ void NetWin::reportOutPacket(int size) {
 // ----- Commands -----
 
 void NetWin::stopNet() {
-    if (m_codeNet.isServiceAvailable()) {
-        m_codeNet.stopService();
-    }
-    if (m_netDrive.isServiceAvailable()) {
-        m_netDrive.stopService();
-    }
-    if (m_warpCopy.isServiceAvailable()) {
-        m_warpCopy.stopService();
-    }
+    if (m_codeNet.isServiceAvailable()) m_codeNet.stopService();
+    if (m_netDrive.isServiceAvailable()) m_netDrive.stopService();
+    if (m_warpCopy.isServiceAvailable()) m_warpCopy.stopService();
     resetCounters();
 }
 
 void NetWin::runProgram(quint16 addr, const QByteArray &data) {
-    if (!startCodeNet())
-        return;
+    if (!startCodeNet()) return;
 
     m_codeNet.sendData(addr, data);
-    if (addr == 0x0801)
-        m_codeNet.execRun();
-    else
-        m_codeNet.execJump(addr);
+    if (addr == 0x0801) m_codeNet.execRun();
+    else m_codeNet.execJump(addr);
 }
 
 void NetWin::shareFiles(const CBMFileList &files) {
-    if (!startNetDrive())
-        return;
+    if (!startNetDrive()) return;
 
     m_netDrive.shareFiles(files);
 }
@@ -180,10 +166,8 @@ bool NetWin::writeDisk(DImage *image) {
 }
 
 bool NetWin::copyDisk(WarpCopyDisk::Mode mode, DImage *image) {
-    if (!startWarpCopy())
-        return false;
-    if (m_copyDialog == 0)
-        m_copyDialog = new CopyDialog;
+    if (!startWarpCopy()) return false;
+    if (m_copyDialog == nullptr) m_copyDialog = new CopyDialog;
     return m_copyDialog->copyDisk(8, &m_warpCopy, mode, image);
 }
 
@@ -191,29 +175,24 @@ bool NetWin::copyDisk(WarpCopyDisk::Mode mode, DImage *image) {
 
 void NetWin::formatDisk(const QString &name, const QString &id) {
     QString cmd = "N:" + name;
-    if (id != "")
-        cmd += "," + id;
+    if (id != "") cmd += "," + id;
+    if (!startWarpCopy()) return;
 
-    if (!startWarpCopy())
-        return;
     m_warpCopy.sendDOSCommand(8, cmd);
 }
 
 void NetWin::verifyDisk() {
-    if (!startWarpCopy())
-        return;
+    if (!startWarpCopy()) return;
     m_warpCopy.sendDOSCommand(8, "V");
 }
 
 void NetWin::sendDOSCommand(const QString &cmd) {
-    if (!startWarpCopy())
-        return;
+    if (!startWarpCopy()) return;
     m_warpCopy.sendDOSCommand(8, cmd);
 }
 
 void NetWin::getDriveStatus() {
-    if (!startWarpCopy())
-        return;
+    if (!startWarpCopy()) return;
     m_warpCopy.getDriveStatus(8);
 }
 

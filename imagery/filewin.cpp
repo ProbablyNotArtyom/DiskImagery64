@@ -3,7 +3,7 @@
 
 FileWin::FileWin(const QString &rootDirName, QWidget *parent)
     : MainWin("FileWin", QRect(100, 100, 200, 300), parent) {
-    m_dirIcon = style()->standardIcon(QStyle::SP_DirOpenIcon, 0, this);
+    m_dirIcon = style()->standardIcon(QStyle::SP_DirOpenIcon, nullptr, this);
 
 #ifdef Q_OS_WIN32
     setWindowTitle("DiskImagery64 - " + tr("File Browser"));
@@ -28,12 +28,10 @@ FileWin::FileWin(const QString &rootDirName, QWidget *parent)
 
     m_currentDirEdit = new QLineEdit(mainWidget);
     layout->addWidget(m_currentDirEdit, 0, 1);
-    connect(m_currentDirEdit, SIGNAL(returnPressed()), this,
-            SLOT(newDirEntered()));
+    connect(m_currentDirEdit, SIGNAL(returnPressed()), this, SLOT(newDirEntered()));
 
     m_model = new FileModel;
-    m_model->setSorting(QDir::Name | QDir::DirsFirst | QDir::IgnoreCase |
-                        QDir::LocaleAware);
+    m_model->setSorting(QDir::Name | QDir::DirsFirst | QDir::IgnoreCase | QDir::LocaleAware);
     m_view = new QTreeView(mainWidget);
     m_view->setModel(m_model);
     m_view->setDragEnabled(true);
@@ -61,13 +59,10 @@ FileWin::FileWin(const QString &rootDirName, QWidget *parent)
     connect(m_deleteAction, SIGNAL(triggered()), this, SLOT(deleteSel()));
 
     // open disk images
-    connect(m_view, SIGNAL(activated(const QModelIndex &)), this,
-            SLOT(activateItem(const QModelIndex &)));
+    connect(m_view, SIGNAL(activated(const QModelIndex &)), this, SLOT(activateItem(const QModelIndex &)));
 
-    if (rootDirName == "")
-        loadSettings();
-    else
-        setRootDir(rootDirName);
+    if (rootDirName == "") loadSettings();
+    else setRootDir(rootDirName);
 }
 
 FileWin::~FileWin() { saveSettings(); }
@@ -75,8 +70,7 @@ FileWin::~FileWin() { saveSettings(); }
 void FileWin::setRootDir(const QString &dirPath) {
     QString rootDirPath = dirPath;
     QDir rootDir(rootDirPath);
-    if (!rootDir.exists())
-        rootDirPath = QDir::homePath();
+    if (!rootDir.exists()) rootDirPath = QDir::homePath();
 
     QModelIndex index = m_model->index(rootDirPath);
     m_view->setRootIndex(index);
@@ -93,11 +87,8 @@ QString FileWin::rootDir() const {
 // ----- Slots -----
 
 void FileWin::openDir() {
-    QString dirPath = QFileDialog::getExistingDirectory(
-        this, tr("Select Directory"), rootDir());
-    if (dirPath != "") {
-        setRootDir(dirPath);
-    }
+    QString dirPath = QFileDialog::getExistingDirectory(this, tr("Select Directory"), rootDir());
+    if (dirPath != "") setRootDir(dirPath);
 }
 
 void FileWin::newDirEntered() { setRootDir(m_currentDirEdit->text()); }
@@ -114,8 +105,7 @@ void FileWin::activateItem(const QModelIndex &index) {
         // operate on file
         else {
             CBMFile file;
-            if (m_model->fileForIndex(index, file))
-                operateOnFile(file);
+            if (m_model->fileForIndex(index, file)) operateOnFile(file);
         }
     }
 }
@@ -129,50 +119,38 @@ void FileWin::copy() {
     QItemSelectionModel *selModel = m_view->selectionModel();
     if (selModel->hasSelection()) {
         QMimeData *data = m_model->copySelection(selModel->selectedRows());
-        if (data != 0) {
-            QApplication::clipboard()->setMimeData(data);
-        }
+        if (data != nullptr) QApplication::clipboard()->setMimeData(data);
     }
 }
 
 void FileWin::paste() {
     QModelIndex parent = m_view->currentIndex();
-    if (!parent.isValid())
-        return;
+    if (!parent.isValid()) return;
 
     const QMimeData *data = QApplication::clipboard()->mimeData();
-    if (data != 0) {
-        m_model->pasteSelection(data, parent);
-    }
+    if (data != nullptr) m_model->pasteSelection(data, parent);
 }
 
 void FileWin::deleteSel() {
     QItemSelectionModel *selModel = m_view->selectionModel();
-    if (selModel->hasSelection()) {
-        m_model->deleteSelection(selModel->selectedRows());
-    }
+    if (selModel->hasSelection()) m_model->deleteSelection(selModel->selectedRows());
 }
 
 bool FileWin::getCurrentFile(CBMFile &file) {
     QModelIndexList selection = m_view->selectionModel()->selectedRows();
-    if (selection.size() != 1) {
-        return false;
-    }
+    if (selection.size() != 1) return false;
     return m_model->fileForIndex(selection[0], file);
 }
 
 bool FileWin::getCurrentFiles(CBMFileList &files) {
     QModelIndexList selection = m_view->selectionModel()->selectedRows();
-    if (selection.empty()) {
-        return false;
-    }
+    if (selection.empty()) return false;
 
     files.setTitle("LOCAL HOST", "64");
     files.clear();
     foreach (QModelIndex index, selection) {
         CBMFile file;
-        if (!m_model->fileForIndex(index, file))
-            return false;
+        if (!m_model->fileForIndex(index, file)) return false;
         files << file;
     }
     return true;
@@ -184,8 +162,7 @@ void FileWin::loadSettings() {
     QSettings settings;
     settings.beginGroup("FileWin");
 
-    QString rootDirName =
-        settings.value("directory", QDir::homePath()).toString();
+    QString rootDirName = settings.value("directory", QDir::homePath()).toString();
     setRootDir(rootDirName);
 
     settings.endGroup();

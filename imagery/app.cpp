@@ -45,25 +45,23 @@ void App::openFile(const QString &fileName) {
             win->show();
         }
     } else {
-        QMessageBox::warning(0, tr("Unknown File"),
-                             tr("Can't open unknown File '%1'!").arg(fileName));
+        QMessageBox::warning(nullptr,
+            tr("Unknown File"), tr("Can't open unknown File '%1'!").arg(fileName));
     }
 }
 
 int App::getNumFileWin() {
     int num = 0;
-    foreach (QWidget *w, QApplication::topLevelWidgets()) {
-        if (qobject_cast<FileWin *>(w))
-            num++;
-    }
+    foreach (QWidget *w, QApplication::topLevelWidgets())
+        if (qobject_cast<FileWin *>(w)) num++;
+
     return num;
 }
 
 int App::getNumDImageWin() {
     int num = 0;
-    foreach (QWidget *w, QApplication::topLevelWidgets()) {
-        if (qobject_cast<DImageWin *>(w))
-            num++;
-    }
+    foreach (QWidget *w, QApplication::topLevelWidgets())
+        if (qobject_cast<DImageWin *>(w)) num++;
+
     return num;
 }
