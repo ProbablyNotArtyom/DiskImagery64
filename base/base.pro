@@ -2,12 +2,12 @@
 # qt project file for DiskImagery64
 # written by Christian Vogelgsang <chris@vogelgsang.org>
 
-include(../common.pri)
-
 TEMPLATE = lib
 TARGET   = base
-CONFIG  += staticlib create_prl
+QMAKE_CLEAN += libbase.a libbase.prl
+CONFIG  += qt staticlib create_prl
 QT -= gui
+QT += widgets
 
 HEADERS += petscii.h   cbmfile.h   dimage.h   diskimage.h
 SOURCES += petscii.cpp cbmfile.cpp dimage.cpp diskimage.c

@@ -2,13 +2,11 @@
 # qt project file for DiskImagery64
 # written by Christian Vogelgsang <chris@vogelgsang.org>
 
-include(../common.pri)
-
 TEMPLATE = lib
 TARGET   = widgets
-CONFIG  += staticlib create_prl
-QT += gui
+QMAKE_CLEAN += libwidgets.a libwidgets.prl
+CONFIG  += qt staticlib create_prl
+QT += widgets gui
 
-HEADERS += ColorPickerButton.h
+HEADERS += ColorPickerButton.h ColorPickerActionWidget.h
 SOURCES += ColorPickerButton.cpp
-HEADERS += ColorPickerActionWidget.h

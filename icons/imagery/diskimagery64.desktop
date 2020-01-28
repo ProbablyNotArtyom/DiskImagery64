@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=DiskImagery64
+Comment=D64 Disk Image Editor
+
+Encoding=UTF-8
+Version=1.0
+
+Type=Application
+Categories=Application;Utility;Qt
+
+MimeType=application/x-d64;application/x-d71;application/x-d81
+
+Exec=diskimagery64 %F
+TryExec=diskimagery64
+StartupNotify=true
+Terminal=false
+
+Icon=/usr/share/pixmaps/diskimagery64.xpm

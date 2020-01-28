@@ -2,11 +2,10 @@
 # qt project file for DiskImagery64
 # written by Christian Vogelgsang <chris@vogelgsang.org>
 
-include(../common.pri)
-
 TEMPLATE = lib
 TARGET   = net
-CONFIG  += staticlib create_prl
+QMAKE_CLEAN += libnet.a libnet.prl
+CONFIG  += qt staticlib create_prl
 QT -= gui
 QT += network
 
