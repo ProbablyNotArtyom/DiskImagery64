@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2020-01-28T12:57:53. -->
+<!-- Written by QtCreator 4.11.0, 2020-01-28T16:04:48. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -303,7 +303,6 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">imagery2</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/mnt/Keep2/Projects/builds/DiskImagery64/imagery/imagery.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/mnt/Keep2/Projects/builds/DiskImagery64/imagery/imagery.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>

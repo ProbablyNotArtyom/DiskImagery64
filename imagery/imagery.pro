@@ -22,7 +22,7 @@ HEADERS += ../base/petscii.h ../base/cbmfile.h ../base/dimage.h ../base/rawdir.h
 HEADERS += ../net/nethost.h ../net/netservice.h ../net/codenet.h ../net/netdrive.h ../net/netdrivedevice.h
 HEADERS += ../widgets/ColorPickerButton.h ../widgets/ColorPickerActionWidget.h
 
-LIBS += -L../net -lnet -L../base -lbase -L../widgets -lwidgets
+LIBS += -L../net -lnet -L../base -lbase -L../widgets -lwidgets -L/usr/lib/ -lopencbm
 POST_TARGETDEPS += ../base/libbase.a ../net/libnet.a ../widgets/libwidgets.a
 
 mac {
