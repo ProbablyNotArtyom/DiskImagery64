@@ -12,6 +12,7 @@ class DImageWin : public MainWin
 public:
     DImageWin(DImage::DiskFormat format, QWidget *parent=nullptr);
     DImageWin(const QString &fileName, QWidget *parent=nullptr);
+    DImageWin(DImage::DiskFormat format, CBMFile &file, QWidget *parent=nullptr);
     ~DImageWin();
 
     //! return my dimage

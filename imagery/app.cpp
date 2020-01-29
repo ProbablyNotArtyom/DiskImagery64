@@ -1,6 +1,7 @@
 #include "app.h"
 #include "dimagewin.h"
 #include "filewin.h"
+#include "cbmfile.h"
 
 App::App(int &argc, char **argv) : QApplication(argc, argv) {
     setOrganizationName("Lallafa");
@@ -43,6 +44,12 @@ void App::openFile(const QString &fileName) {
         if (DImage::determineDiskFormat(fileName) != DImage::INVALID) {
             DImageWin *win = new DImageWin(fileName);
             win->show();
+        } else {
+            CBMFile file;
+            if (file.fromLocalFile(fileName)) {
+                DImageWin *win = new DImageWin(DImage::D64, file);
+                win->show();
+            }
         }
     } else {
         QMessageBox::warning(nullptr,

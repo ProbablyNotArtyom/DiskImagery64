@@ -33,6 +33,19 @@ DImageWin::DImageWin(DImage::DiskFormat format, QWidget *parent)
     init();
 }
 
+DImageWin::DImageWin(DImage::DiskFormat format, CBMFile &file, QWidget *parent)
+    : MainWin("DImageWin", QRect(300, 100, 200, 300), parent),
+    m_dimage(format) {
+
+    QString dfile, title, id;
+    Preferences::getNextImageName(dfile, title, id);
+    m_dimage.setFileName(dfile);
+    m_dimage.format(title, id);
+    m_dimage.setDirty(false);
+    m_dimage.writeFile(file);
+    init();
+}
+
 DImageWin::DImageWin(const QString &fileName, QWidget *parent)
     : MainWin("DImageWin", QRect(300, 100, 200, 300), parent),
     m_dimage(fileName) {
