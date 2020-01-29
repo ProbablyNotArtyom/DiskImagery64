@@ -10,8 +10,8 @@ class DImageWin : public MainWin
     Q_OBJECT
 
 public:
-    DImageWin(DImage::DiskFormat format,QWidget *parent=0);
-    DImageWin(const QString &fileName,QWidget *parent=0);
+    DImageWin(DImage::DiskFormat format, QWidget *parent=nullptr);
+    DImageWin(const QString &fileName, QWidget *parent=nullptr);
     ~DImageWin();
 
     //! return my dimage
@@ -22,6 +22,7 @@ public slots:
 
     bool saveImage();
     bool saveImageAs();
+    bool saveFileAs();
 
     void cut();
     void copy();

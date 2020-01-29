@@ -6,11 +6,14 @@
 #include <QDirModel>
 
 FileModel::FileModel(QObject *parent) : QDirModel(parent) {
-    // setSupportedDragActions(Qt::CopyAction);
     setReadOnly(false);
 }
 
 FileModel::~FileModel() {}
+
+Qt::DropActions FileModel::supportedDragActions() const {
+    return Qt::CopyAction;
+}
 
 Qt::ItemFlags FileModel::flags(const QModelIndex &index) const {
     Qt::ItemFlags flags = QDirModel::flags(index);

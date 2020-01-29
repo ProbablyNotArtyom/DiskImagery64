@@ -55,6 +55,7 @@ void MainWin::initActions() {
     m_saveImageAction->setShortcut(tr("Ctrl+S"));
 
     m_saveImageAsAction = new QAction(tr("Save Image &as..."), this);
+    m_saveFileAsAction = new QAction(tr("Save File &as..."), this);
 
     m_closeAction = new QAction(tr("Close"), this);
     m_closeAction->setShortcut(tr("Ctrl+W"));
@@ -160,6 +161,7 @@ void MainWin::initMenu() {
     menu->addSeparator();
     menu->addAction(m_saveImageAction);
     menu->addAction(m_saveImageAsAction);
+    menu->addAction(m_saveFileAsAction);
     menu->addAction(m_closeAction);
     menu->addSeparator();
     menu->addAction(m_quitAction);

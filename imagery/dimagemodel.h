@@ -30,6 +30,8 @@ public:
     bool deleteSelection(const QModelIndexList &indexes);
 
     // drag & drop support
+    Qt::DropActions supportedDragActions() const { return Qt::CopyAction; }
+    Qt::DropActions supportedDropActions() const { return Qt::CopyAction; }
     QStringList mimeTypes() const;
     QMimeData *mimeData(const QModelIndexList &indexes) const;
     bool dropMimeData(const QMimeData *data,Qt::DropAction action,

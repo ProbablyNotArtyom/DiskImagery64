@@ -63,7 +63,7 @@ void DImageWin::init() {
     m_dirView->setModel(m_model);
     m_dirView->setDragDropMode(QAbstractItemView::DragDrop);
     m_dirView->setSelectionMode(QAbstractItemView::ExtendedSelection);
-    m_dirView->header()->setStretchLastSection(true);
+    m_dirView->header()->setStretchLastSection(false);
     m_dirView->setRootIsDecorated(false);
     m_origFont = m_dirView->font().toString();
     layout->addWidget(m_dirView, 2, 0);
@@ -72,9 +72,10 @@ void DImageWin::init() {
     // blocks free and drive status labels
     m_blocksFree = new QLabel(mainWidget);
     m_driveStatus = new QLabel(mainWidget);
-    m_driveStatus->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+    m_driveStatus->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+    m_blocksFree->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     layout->addWidget(m_blocksFree, 3, 0, 1, 2);
-    layout->addWidget(m_driveStatus, 4, 0, 1, 2);
+    layout->addWidget(m_driveStatus, 3, 0, 1, 2);
 
     // setup icon
     m_fileIcon = style()->standardIcon(QStyle::SP_FileIcon, nullptr, this);
@@ -90,27 +91,23 @@ void DImageWin::init() {
 
     // connect menu entries
     connect(m_saveImageAction, SIGNAL(triggered()), this, SLOT(saveImage()));
-    connect(m_saveImageAsAction, SIGNAL(triggered()), this,
-        SLOT(saveImageAs()));
+    connect(m_saveImageAsAction, SIGNAL(triggered()), this, SLOT(saveImageAs()));
+    connect(m_saveFileAsAction, SIGNAL(triggered()), this, SLOT(saveFileAs()));
 
     connect(m_cutAction, SIGNAL(triggered()), this, SLOT(cut()));
     connect(m_copyAction, SIGNAL(triggered()), this, SLOT(copy()));
     connect(m_pasteAction, SIGNAL(triggered()), this, SLOT(paste()));
     connect(m_deleteAction, SIGNAL(triggered()), this, SLOT(deleteSel()));
 
-    connect(m_shiftCharsetAction, SIGNAL(toggled(bool)), this,
-        SLOT(shiftCharset(bool)));
-    connect(m_showCharsetAction, SIGNAL(triggered()), this,
-        SLOT(showCharset()));
+    connect(m_shiftCharsetAction, SIGNAL(toggled(bool)), this, SLOT(shiftCharset(bool)));
+    connect(m_showCharsetAction, SIGNAL(triggered()), this, SLOT(showCharset()));
 
     connect(m_formatDiskAction, SIGNAL(triggered()), this, SLOT(formatDisk()));
-    connect(m_addSeparatorAction, SIGNAL(triggered()), this,
-        SLOT(addSeparator()));
+    connect(m_addSeparatorAction, SIGNAL(triggered()), this, SLOT(addSeparator()));
     connect(m_mountImageAction, SIGNAL(triggered()), this, SLOT(mountImage()));
     connect(m_runProgramAction, SIGNAL(triggered()), this, SLOT(runProgram()));
 
-    connect(m_dirView, SIGNAL(activated(const QModelIndex &)), this,
-        SLOT(activateItem(const QModelIndex &)));
+    connect(m_dirView, SIGNAL(activated(const QModelIndex &)), this, SLOT(activateItem(const QModelIndex &)));
 
     // init dialog
     m_charsetDialog = nullptr;
@@ -120,12 +117,11 @@ void DImageWin::init() {
 
 QPixmap DImageWin::darkenPixmap(const QPixmap &pixmap) {
     QPixmap newPixmap(pixmap);
-    // QPixmap alpha = pixmap.alphaChannel();
+    QPixmap alpha = pixmap.createHeuristicMask();
     {
         QPainter painter(&newPixmap);
         painter.fillRect(pixmap.rect(), QBrush(QColor(0, 0, 0, 128)));
     }
-    // newPixmap.setAlphaChannel(alpha);
     return newPixmap;
 }
 
@@ -253,6 +249,22 @@ bool DImageWin::saveImageAs() {
         m_dimage.setFileName(fileName);
         m_dimage.sync();
         updateDImage();
+        return true;
+    }
+    return false;
+}
+
+bool DImageWin::saveFileAs() {
+    QStringList filter;
+    CBMFile file;
+    getCurrentFile(file);
+    filter << CBMFileList::allMimeTypes();
+    filter << tr("All Files (*.*)");
+    QString fileName = QFileDialog::
+        getSaveFileName(this, tr("Save File as"), file.convertToAsciiName(), filter.join(";;"));
+
+    if (fileName != "") {
+        file.toLocalFile(fileName);
         return true;
     }
     return false;

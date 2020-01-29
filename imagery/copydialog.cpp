@@ -169,7 +169,7 @@ void CopyDialog::procBlock(int track, int sector, int status, const QString &sta
 
     // set status
     QString msg;
-    msg.asprintf("Track %02d, Sector %02d ", track + 1, sector);
+    msg = QString("Track %02d, Sector %02d ").arg(track + 1).arg(sector);
     msg += statusMessage;
     m_statusLabel->setText(msg);
 }
@@ -186,6 +186,6 @@ void CopyDialog::updateTime() {
     int mins = total % 60;
     total /= 60;
     QString time;
-    time.asprintf("%02d:%02d:%02d", total, mins, secs);
+    time = QString("%02d:%02d:%02d").arg(total).arg(mins).arg(secs);
     m_timeLabel->setText(time);
 }

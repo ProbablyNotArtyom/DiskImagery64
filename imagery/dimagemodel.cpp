@@ -6,8 +6,6 @@
 #include <QMessageBox>
 
 DImageModel::DImageModel(DImage *dimage) : m_dimage(dimage) {
-    // setSupportedDragActions(Qt::CopyAction);
-
     updateDImage();
 }
 
@@ -22,9 +20,9 @@ void DImageModel::updateDImage() {
     insertColumns(0, 3);
     insertRows(0, size);
 
-    setHeaderData(0, Qt::Horizontal, tr("Name"));
-    setHeaderData(1, Qt::Horizontal, tr("Blocks"));
-    setHeaderData(2, Qt::Horizontal, tr("Type"));
+    setHeaderData(0, Qt::Horizontal, tr("NAME"));
+    setHeaderData(1, Qt::Horizontal, tr("BLOCKS"));
+    setHeaderData(2, Qt::Horizontal, tr("TYPE"));
 
     for (int i = 0; i < size; i++)
         setFileRow(m_files.at(i), i);
@@ -32,8 +30,7 @@ void DImageModel::updateDImage() {
 
 void DImageModel::setFileRow(const CBMFile &file, int row) {
     QString name = Petscii::convertToDisplayString(file.name());
-    QString blocks;
-    blocks.asprintf("%3d", file.blocks());
+    QString blocks = QString("%1").arg(file.blocks());
     QString type = file.convertTypeFlagsToString();
 
     setData(index(row, 0), name);

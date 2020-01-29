@@ -27,7 +27,7 @@ class FileModel : public QDirModel {
     Q_OBJECT
 
 public:
-    FileModel(QObject *parent=0);
+    FileModel(QObject *parent=nullptr);
     ~FileModel();
 
     Qt::ItemFlags flags(const QModelIndex &) const;
@@ -40,6 +40,7 @@ public:
     bool deleteSelection(const QModelIndexList &indexes);
 
     // drag & drop support
+    virtual Qt::DropActions supportedDragActions() const;
     QStringList mimeTypes () const;
     QMimeData *mimeData(const QModelIndexList &indexes) const;
     bool dropMimeData(const QMimeData *data, Qt::DropAction action,

@@ -74,6 +74,7 @@ protected:
     QAction *m_openImageAction;
     QAction *m_saveImageAction;
     QAction *m_saveImageAsAction;
+    QAction *m_saveFileAsAction;
     QAction *m_closeAction;
     QAction *m_quitAction;
     // Edit Menu
