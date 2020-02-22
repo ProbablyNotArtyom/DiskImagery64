@@ -59,7 +59,6 @@ bool DImageModel::setData(const QModelIndex &index, const QVariant &value, int r
     }
     return QStandardItemModel::setData(index, value, role);
 }
-
 // drag support
 
 QStringList DImageModel::mimeTypes() const {

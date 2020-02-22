@@ -1,0 +1,10 @@
+;; Object ede-proj-project
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "ede-proj-project"
+  :file "Project.ede"
+  :name "DiskImagery64"
+  :targets
+  (list
+    (ede-proj-target-makefile-program "ede-proj-target-makefile-program"
+      :name "build"
+      :path "")))

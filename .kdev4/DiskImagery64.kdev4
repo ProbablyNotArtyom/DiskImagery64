@@ -1,0 +1,50 @@
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=diskimagery64
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x03\x00\x00\x00\x1a\x00D\x00i\x00s\x00k\x00I\x00m\x00a\x00g\x00e\x00r\x00y\x006\x004\x00\x00\x00\x0e\x00i\x00m\x00a\x00g\x00e\x00r\x00y\x00\x00\x00\x1a\x00d\x00i\x00s\x00k\x00i\x00m\x00a\x00g\x00e\x00r\x00y\x006\x004)
+Dependency Action=Build
+EnvironmentGroup=
+Executable=file:///mnt/Keep2/Projects/builds/DiskImagery64
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=DiskImagery64,imagery,diskimagery64
+Use External Terminal=false
+Working Directory=
+isExecutable=false
+
+[MakeBuilder]
+Number Of Jobs=12
+Override Number Of Jobs=true
+
+[Project]
+VersionControlSupport=kdevgit
+
+[QMake_Builder]
+Build_Folder=/mnt/Keep2/Projects/builds/DiskImagery64/build
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[QMake_Builder][/mnt/Keep2/Projects/builds/DiskImagery64/build]
+Build_Type=0
+Extra_Arguments=
+Install_Prefix=
+QMake_Binary=/usr/bin/qmake
+
+[SourceFormatter]
+UseDefault=false
+text/x-c++hdr=kdevcustomscript||User1
+text/x-c++src=kdevcustomscript||User1
+text/x-chdr=kdevcustomscript||User1
+text/x-csharp=kdevcustomscript||GNU_indent_GNU
+text/x-csrc=kdevcustomscript||User1
+text/x-java=kdevcustomscript||GNU_indent_GNU
+text/x-objcsrc=kdevcustomscript||GNU_indent_GNU
