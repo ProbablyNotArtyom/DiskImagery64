@@ -8,8 +8,8 @@ QMAKE_CLEAN += diskimagery64
 CONFIG += qt create_prl link_prl
 QT += widgets network
 
-HEADERS += dimagemodel.h dimagewin.h filewin.h filemodel.h opencbmwin.h
-SOURCES += dimagemodel.cpp dimagewin.cpp filewin.cpp filemodel.cpp opencbmwin.cpp
+HEADERS += dimagemodel.h dimagewin.h filewin.h filemodel.h
+SOURCES += dimagemodel.cpp dimagewin.cpp filewin.cpp filemodel.cpp
 HEADERS += netwin.h blockmapwidget.h copydialog.h
 SOURCES += netwin.cpp blockmapwidget.cpp copydialog.cpp
 HEADERS += mainwin.h preferences.h app.h version.h
@@ -22,7 +22,7 @@ HEADERS += ../base/petscii.h ../base/cbmfile.h ../base/dimage.h ../base/rawdir.h
 HEADERS += ../net/nethost.h ../net/netservice.h ../net/codenet.h ../net/netdrive.h ../net/netdrivedevice.h
 HEADERS += ../widgets/ColorPickerButton.h ../widgets/ColorPickerActionWidget.h
 
-LIBS += -L../net -lnet -L../base -lbase -L../widgets -lwidgets -L/usr/lib/ -lopencbm
+LIBS += -L../net -lnet -L../base -lbase -L../widgets -lwidgets -L/usr/lib/
 POST_TARGETDEPS += ../base/libbase.a ../net/libnet.a ../widgets/libwidgets.a
 
 mac {

@@ -15,7 +15,6 @@ else:win32:CONFIG(debug, debug|release): \
     LIBS += -L$$OUT_PWD/widgets/release/ -lwidgets \
     LIBS += -L$$OUT_PWD/net/release/ -lnet
 else:unix: \
-    LIBS += -L/usr/lib/ -lopencbm \
     LIBS += -L$$OUT_PWD/base/ -lbase \
     LIBS += -L$$OUT_PWD/widgets/ -lwidgets \
     LIBS += -L$$OUT_PWD/net/ -lnet
