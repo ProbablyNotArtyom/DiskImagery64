@@ -69,12 +69,17 @@ ColorPickerButton::ColorPickerButton(QWidget * parent) :
     QObject::connect(m_menu, SIGNAL(aboutToHide()), colorPickerActionWidget, SLOT(aboutToHide()));
 }
 
+QColor ColorPickerButton::getColor() {
+	currentColor = palette().color(QPalette::Button);
+	return currentColor;
+}
+
 void ColorPickerButton::onColorDialogAction() {
     QScopedPointer<QColorDialog> colorDialogPtr(new QColorDialog(this));
     QColorDialog * colorDialog = colorDialogPtr.data();
     colorDialog->setOptions(QColorDialog::DontUseNativeDialog | QColorDialog::ShowAlphaChannel);
 
-    QColor currentColor = colorDialog->currentColor();
+    currentColor = colorDialog->currentColor();
     currentColor.setAlpha(255);
     colorDialog->setCurrentColor(currentColor);
 

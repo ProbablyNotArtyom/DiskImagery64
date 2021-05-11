@@ -17,11 +17,7 @@ public:
     Qt::ItemFlags flags(const QModelIndex &) const;
 
     void updateDImage();
-
-    bool setData(const QModelIndex &index,
-                 const QVariant &value,
-                 int role = Qt::EditRole);
-
+    bool setData(const QModelIndex &index, const QVariant &value, int role = Qt::EditRole);
     bool fileForIndex(const QModelIndex &index,CBMFile &file) const;
 
     // change image
@@ -30,8 +26,7 @@ public:
     bool deleteSelection(const QModelIndexList &indexes);
 
     // drag & drop support
-    Qt::DropActions supportedDragActions() const { return Qt::CopyAction; }
-    Qt::DropActions supportedDropActions() const { return Qt::CopyAction; }
+    virtual  Qt::DropActions supportedDropActions() const { return Qt::CopyAction; }
     QStringList mimeTypes() const;
     QMimeData *mimeData(const QModelIndexList &indexes) const;
     bool dropMimeData(const QMimeData *data,Qt::DropAction action,

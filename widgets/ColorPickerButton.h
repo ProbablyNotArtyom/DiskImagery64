@@ -34,8 +34,9 @@ QT_FORWARD_DECLARE_CLASS(QMenu)
 class ColorPickerButton: public QToolButton {
     Q_OBJECT
 public:
-    explicit ColorPickerButton(QWidget * parent = nullptr);
-
+	explicit ColorPickerButton(QWidget * parent = nullptr);
+	QColor getColor();
+	
 Q_SIGNALS:
     void colorSelected(QColor color);
     void rejected();
@@ -45,6 +46,7 @@ private:
 
 private:
     QMenu * m_menu;
+	QColor currentColor;
 };
 
 QT_FORWARD_DECLARE_CLASS(QColorDialog)

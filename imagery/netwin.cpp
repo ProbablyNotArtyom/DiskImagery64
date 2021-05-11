@@ -1,6 +1,7 @@
 #include "netwin.h"
 #include "codenet.h"
 #include "preferences.h"
+#include "version.h"
 
 #include <QGridLayout>
 #include <QLabel>
@@ -16,7 +17,7 @@ NetWin::NetWin(QWidget *parent) : QDialog(parent, Qt::Tool), m_copyDialog(nullpt
     m_logView->setReadOnly(true);
     m_logView->setLineWrapMode(QTextEdit::NoWrap);
     QFont smallFont("Monaco");
-    smallFont.setPointSize(9);
+	smallFont.setPointSize(FONT_POINT_LOG);
     m_logView->setFont(smallFont);
 
     // packet counter

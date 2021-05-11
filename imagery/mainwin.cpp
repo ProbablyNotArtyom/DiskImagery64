@@ -272,8 +272,8 @@ void MainWin::preferences() {
 }
 
 void MainWin::operateOnFile(const CBMFile &file) {
-    // double click triggers a net run
-    netRunFile(file);
+    // double click triggers an emulator run
+	m_runProgramAction->activate(QAction::Trigger);
 }
 
 // network
